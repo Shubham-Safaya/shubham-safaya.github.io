@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shubham Safaya — Product Manager</title>
-<meta name="description" content="Product Manager at Walmart Global Tech. Building data products at the intersection of customer identity, advertising, and privacy. Duke MEM. Ex-KPMG.">
-<meta property="og:title" content="Shubham Safaya — Product Manager">
-<meta property="og:description" content="Building data products at the intersection of customer identity, advertising, and privacy.">
+<title>Shubham Safaya — Product Manager & Builder</title>
+<meta name="description" content="Senior Product Manager at Walmart Global Tech. I write the spec AND the code. Building data products at the intersection of customer identity, advertising, and privacy. Open-source contributor. Duke MEM.">
+<meta property="og:title" content="Shubham Safaya — Product Manager & Builder">
+<meta property="og:description" content="I write the spec AND the code. Building data products at the intersection of customer identity, advertising, and privacy.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
@@ -85,7 +85,7 @@ a{color:inherit;text-decoration:none}
 <section id="home" style="min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;position:relative">
   <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 50% 30%,#c9a96e06 0%,transparent 60%)"></div>
   <div style="position:relative;z-index:1">
-    <div style="font-family:'Inter',sans-serif;font-size:11px;letter-spacing:8px;color:#555;margin-bottom:18px;text-transform:uppercase">Product Manager · Builder · Creator</div>
+    <div style="font-family:'Inter',sans-serif;font-size:11px;letter-spacing:8px;color:#555;margin-bottom:18px;text-transform:uppercase">Product Manager · Engineer · Builder</div>
     <h1 style="font-size:clamp(32px,7vw,56px);font-weight:300;color:#e8e4dc;margin:0 0 12px;line-height:1.15;letter-spacing:-1px">Shubham Safaya</h1>
     <p style="font-size:16px;color:#777;max-width:500px;margin:0 auto 24px;line-height:1.7">
       Product Manager at Walmart Global Tech. Building data products at the intersection of <span style="color:var(--gold)">customer identity</span>, <span style="color:var(--gold)">advertising</span>, and <span style="color:var(--gold)">privacy</span>.
@@ -163,6 +163,19 @@ a{color:inherit;text-decoration:none}
   </div>
 </section>
 
+<!-- ENGINEERING -->
+<div class="divider"></div>
+<section id="engineering" class="section">
+  <span class="label">Open Source & Engineering</span>
+  <h2 class="h2">I write the spec AND the code</h2>
+  <p class="body" style="font-size:15px;margin-bottom:16px">Open-source tools and side projects. Everything here is something I built to solve a real problem.</p>
+  <div class="grid2" id="projects-grid"></div>
+  <div style="margin-top:16px;display:flex;gap:8px;flex-wrap:wrap">
+    <a href="https://github.com/Shubham-Safaya" target="_blank" class="btn">View GitHub Profile</a>
+    <a href="https://shubhamsafaya.wordpress.com" target="_blank" class="btn">Read the Blog</a>
+  </div>
+</section>
+
 <!-- COACHING -->
 <div class="divider"></div>
 <section id="coaching" class="section">
@@ -222,7 +235,7 @@ a{color:inherit;text-decoration:none}
 </div>
 
 <script>
-const SECTIONS=["home","about","impact","cases","youtube","coaching","certs","writing","contact"];
+const SECTIONS=["home","about","impact","cases","youtube","engineering","coaching","certs","writing","contact"];
 let menuOpen=false;
 
 // NAV
@@ -254,7 +267,7 @@ window.addEventListener('scroll',()=>{
 buildNav();
 
 // SKILLS
-const SKILLS=["Feature Prioritization","Market Research","Customer Interviews","User Discovery","Agile/Scrum","Stakeholder Management","Data Analytics","GCP/BigQuery","Power BI/Tableau/Looker","Jira/Confluence","Figma/Miro","Python","SQL","C++"];
+const SKILLS=["Feature Prioritization","Market Research","Customer Interviews","User Discovery","Agile/Scrum","Stakeholder Management","Data Analytics","GCP/BigQuery","Power BI/Tableau/Looker","Jira/Confluence","Figma/Miro","Python","SQL","JavaScript","NetworkX","FastAPI"];
 document.getElementById('skills-tags').innerHTML=SKILLS.map(s=>`<span class="tag">${s}</span>`).join('');
 
 // TIMELINE
@@ -329,6 +342,17 @@ function renderDC(){
 function toggleDukeCases(){showAllDC=!showAllDC;renderDC();}
 renderDC();
 
+// PROJECTS
+const PROJ=[
+  {t:"Identity Resolution Engine",d:"Open-source deterministic + probabilistic identity matching with graph clustering. 108 tests, CI across Python 3.10-3.12.",tags:["Python","NetworkX","Identity"],url:"https://github.com/Shubham-Safaya/identity-resolution-engine"},
+  {t:"Data Quality Monitor",d:"Zero-dependency data validation library. Define checks in pure Python, get pass/fail reports. 52 tests.",tags:["Python","Data Quality"],url:"https://github.com/Shubham-Safaya/data-quality-monitor"},
+  {t:"Stock Screener + Congressional Tracker",d:"Daily automated stock screener with RSI, SMA crossovers, and congressional trading data. Runs via GitHub Actions.",tags:["Python","Finance","Automation"],url:"https://github.com/Shubham-Safaya/stock-screener"},
+  {t:"Job Search Dashboard",d:"Live analytics dashboard tracking automated job search. US heatmap, company tiers, source analysis.",tags:["Chart.js","Leaflet.js","GitHub Pages"],url:"https://shubham-safaya.github.io/job-search-dashboard/"},
+  {t:"Accessible Alarm Clock",d:"Multi-sensory alarm PWA for users with visual or hearing impairments. Web Speech API, haptics, visual alerts.",tags:["JavaScript","PWA","Accessibility"],url:"https://github.com/Shubham-Safaya/accessibility-alarm"},
+  {t:"Productivity Toolkit",d:"7 Claude API-powered CLI tools for career development: resume tailoring, interview prep, content generation.",tags:["Python","Anthropic SDK","CLI"],url:"https://github.com/Shubham-Safaya/productivity-toolkit"},
+];
+document.getElementById('projects-grid').innerHTML=PROJ.map(p=>`<a href="${p.url}" target="_blank" rel="noopener noreferrer" style="text-decoration:none"><div class="card card-gold" style="cursor:pointer"><div style="font-size:14px;color:#ccc;margin-bottom:4px">${p.t} <span style="font-family:'Inter',sans-serif;font-size:10px;color:#555">↗</span></div><div style="font-family:'Inter',sans-serif;font-size:11px;color:#777;line-height:1.6;margin-bottom:6px">${p.d}</div><div>${p.tags.map(t=>`<span class="tag">${t}</span>`).join('')}</div></div></a>`).join('');
+
 // CERTS
 const CERTS=[
   {n:"Certified Scrum Product Owner (CSPO)",o:"Scrum Alliance",p:"https://d1239447-37e7-4b8e-8904-0bcf056c039e.filesusr.com/ugd/c94ca8_14d25268ec7f4eda83c5547067b2edf2.pdf"},
@@ -346,9 +370,11 @@ document.getElementById('certs-list').innerHTML=CERTS.map(c=>`<a href="${c.p}" t
 // WRITING
 const WR=[
   {t:"Customer Data Identity × Advertising × Privacy — 15-day series",p:"LinkedIn",s:"prog"},
-  {t:"Day 6: Most personalization problems are identity expectation problems",p:"LinkedIn",s:"pub"},
-  {t:"How Retail Media Connects Data to Drive Revenue",p:"Medium",s:"plan"},
-  {t:"The PM's Guide to Getting Into US Tech from India",p:"YouTube + Blog",s:"plan"},
+  {t:"How I Automated My Entire Job Search with Python and GitHub Actions",p:"Blog",s:"pub"},
+  {t:"I Built an Open-Source Identity Resolution Engine",p:"Blog",s:"pub"},
+  {t:"Why I Built a Data Quality Tool With Zero Dependencies",p:"Blog",s:"pub"},
+  {t:"I Built a Live Dashboard to Track My Automated Job Search",p:"Blog",s:"pub"},
+  {t:"I Built a Daily Stock Screener That Tracks What Congress Is Buying",p:"Blog",s:"pub"},
 ];
 document.getElementById('writing-list').innerHTML=WR.map(w=>`<div class="writing-row"><div><div style="font-size:13px;color:#ccc">${w.t}</div><div style="font-family:'Inter',sans-serif;font-size:11px;color:var(--dim)">${w.p}</div></div><span class="status status-${w.s}">${w.s==='pub'?'Published':w.s==='prog'?'In Progress':'Planned'}</span></div>`).join('');
 </script>
