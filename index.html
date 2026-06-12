@@ -3,380 +3,622 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shubham Safaya — Product Manager & Builder</title>
-<meta name="description" content="Senior Product Manager at Walmart Global Tech. I write the spec AND the code. Building data products at the intersection of customer identity, advertising, and privacy. Open-source contributor. Duke MEM.">
-<meta property="og:title" content="Shubham Safaya — Product Manager & Builder">
-<meta property="og:description" content="I write the spec AND the code. Building data products at the intersection of customer identity, advertising, and privacy.">
+<title>Shubham Safaya — Senior Product Manager · Identity, Ads Personalization & Privacy</title>
+<meta name="description" content="Senior Product Manager at Walmart Global Tech building the identity layer of retail media — data identity, customer ads personalization, and privacy-preserving targeting. I write the spec AND the code.">
+<meta property="og:title" content="Shubham Safaya — Identity · Ads Personalization · Privacy">
+<meta property="og:description" content="Senior PM building the identity layer of retail media. $15M+ ad revenue, $3.5B GMV traced, open-source identity resolution engine.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://shubham-safaya.github.io">
+<meta name="theme-color" content="#070708">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='9' cy='10' r='3' fill='%23c9a96e'/%3E%3Ccircle cx='23' cy='8' r='2' fill='%23c9a96e' opacity='.6'/%3E%3Ccircle cx='20' cy='23' r='2.5' fill='%23c9a96e' opacity='.8'/%3E%3Cpath d='M9 10L23 8M9 10l11 13M23 8l-3 15' stroke='%23c9a96e' stroke-width='.8' opacity='.5'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Shubham Safaya",
+"jobTitle":"Senior Product Manager","worksFor":{"@type":"Organization","name":"Walmart Global Tech"},
+"alumniOf":[{"@type":"CollegeOrUniversity","name":"Duke University"},{"@type":"CollegeOrUniversity","name":"Mumbai University"}],
+"url":"https://shubham-safaya.github.io",
+"sameAs":["https://www.linkedin.com/in/shubham-safaya/","https://github.com/Shubham-Safaya","https://www.youtube.com/@sundayswithsafaya"],
+"knowsAbout":["Identity Resolution","Customer Data Platforms","Retail Media","Advertising Technology","Data Privacy","AI Product Management"]}
+</script>
 <style>
+/* ────────────────────────── design tokens ────────────────────────── */
+:root{
+  --bg:#070708; --bg2:#0b0b0e; --card:#101014; --bdr:#1c1c22; --bdr2:#26262e;
+  --gold:#c9a96e; --gold-hi:#e8cfa0; --gold-dim:rgba(201,169,110,.14);
+  --ink:#e9e5dc; --txt:#b9b4a9; --mut:#807c73; --dim:#55524c;
+  --serif:'Fraunces',Georgia,serif; --sans:'Inter',-apple-system,sans-serif; --mono:'JetBrains Mono',monospace;
+  --ease:cubic-bezier(.22,.8,.24,1);
+}
 *{margin:0;padding:0;box-sizing:border-box}
-:root{--gold:#c9a96e;--bg:#08080c;--card:#0e0e14;--bdr:#1a1a24;--txt:#d4d0c8;--mut:#9a968e;--dim:#666}
-body{background:var(--bg);color:var(--txt);font-family:'Cormorant Garamond',Georgia,serif;-webkit-font-smoothing:antialiased}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--txt);font-family:var(--sans);font-weight:300;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--gold);color:#0a0a0c}
 a{color:inherit;text-decoration:none}
-.label{font-family:'Inter',sans-serif;font-size:10px;letter-spacing:5px;color:var(--gold);text-transform:uppercase;display:block;margin-bottom:10px}
-.h2{font-size:clamp(22px,4vw,34px);font-weight:400;color:#e8e4dc;margin:0 0 20px;line-height:1.3}
-.body{font-size:16px;line-height:1.8;color:var(--mut)}
-.section{padding:72px 24px 56px;max-width:860px;margin:0 auto}
-.divider{height:1px;background:linear-gradient(90deg,transparent,var(--bdr),transparent)}
-.card{background:var(--card);border:1px solid var(--bdr);border-radius:8px;padding:18px;margin-bottom:8px;transition:border-color .2s}
-.card:hover{border-color:#c9a96e22}
-.card-gold{border-left:3px solid #c9a96e22}
-.tag{display:inline-block;font-family:'Inter',sans-serif;font-size:10px;letter-spacing:1px;color:#777;border:1px solid #222;border-radius:12px;padding:2px 9px;margin:5px 5px 0 0}
-.btn{display:inline-block;padding:9px 22px;border:1px solid var(--gold);color:var(--gold);border-radius:4px;font-family:'Inter',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;background:transparent;transition:all .2s}
-.btn:hover{background:#c9a96e11}
-.btn-red{border-color:#FF0033;color:#FF0033}.btn-red:hover{background:#FF003311}
-.btn-pink{border-color:#E1306C;color:#E1306C}.btn-pink:hover{background:#E1306C11}
-.btn-purple{border-color:#9C27B0;color:#9C27B0}.btn-purple:hover{background:#9C27B011}
-.btn-blue{border-color:#0A66C2;color:#0A66C2}.btn-blue:hover{background:#0A66C211}
-.grid2{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:8px}
-.grid3{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:8px}
-.grid4{display:grid;grid-template-columns:repeat(auto-fill,minmax(100px,1fr));gap:8px}
-.metric{background:var(--card);border:1px solid var(--bdr);border-radius:8px;padding:12px 8px;text-align:center}
-.metric-val{font-size:clamp(16px,2.5vw,22px);font-weight:300;color:var(--gold)}
-.metric-lbl{font-family:'Inter',sans-serif;font-size:9px;color:#888;letter-spacing:1px;text-transform:uppercase}
-.acc{padding:8px 12px;border-radius:5px;font-size:13px;color:#888;line-height:1.6}
-.acc:nth-child(odd){background:var(--card)}
-.toggler{margin-top:8px;background:none;border:1px solid var(--bdr);color:var(--dim);padding:6px 16px;border-radius:4px;cursor:pointer;font-family:'Inter',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase}
-.cert-row{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-radius:6px;gap:10px}
-.cert-row:nth-child(odd){background:var(--card)}
-.cert-row:hover{background:#c9a96e08}
-.nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:12px 20px;display:flex;justify-content:space-between;align-items:center;transition:all .3s}
-.nav.scrolled{background:rgba(8,8,12,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--bdr)}
-.nav-logo{font-family:'Inter',sans-serif;font-size:13px;letter-spacing:4px;color:var(--gold);cursor:pointer;text-transform:uppercase}
-.nav-dots{display:flex;gap:4px;align-items:center}
-.nav-dot{height:6px;border-radius:3px;border:none;cursor:pointer;transition:all .3s;padding:0;background:#333;width:6px}
-.nav-dot.active{background:var(--gold);width:18px}
-.mobile-menu{position:fixed;top:44px;right:12px;z-index:99;background:var(--card);border:1px solid var(--bdr);border-radius:8px;padding:6px 0;min-width:140px;display:none}
-.mobile-menu.open{display:block}
-.mobile-menu button{display:block;width:100%;text-align:left;background:none;border:none;color:#777;padding:6px 16px;cursor:pointer;font-family:'Inter',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase}
-.mobile-menu button.active{color:var(--gold)}
-.hamburger{background:none;border:none;color:var(--dim);cursor:pointer;font-size:15px;padding:4px}
-.timeline-item{display:flex;gap:16px;padding:12px 0 12px 18px;border-left:1px solid var(--bdr);position:relative}
-.timeline-dot{position:absolute;left:-4px;top:16px;width:7px;height:7px;border-radius:50%;background:#333}
-.timeline-dot.current{background:var(--gold)}
-.writing-row{display:flex;justify-content:space-between;align-items:center;padding:10px 12px;border-radius:5px;flex-wrap:wrap;gap:6px}
-.writing-row:nth-child(odd){background:var(--card)}
-.status{font-family:'Inter',sans-serif;font-size:10px;padding:2px 8px;border-radius:10px;border:1px solid}
-.status-pub{border-color:#00C85344;color:#00C853}
-.status-prog{border-color:#c9a96e44;color:var(--gold)}
-.status-plan{border-color:#33333366;color:#555}
-.impact-card{padding:18px}
-.impact-stat{font-size:20px;font-weight:300;color:var(--gold);margin-bottom:2px}
-.impact-lbl{font-family:'Inter',sans-serif;font-size:11px;color:#aaa;letter-spacing:1px;text-transform:uppercase;margin-bottom:6px}
-.impact-desc{font-size:13px;color:#777;line-height:1.6}
-.work-card{margin-bottom:8px}
-.hidden{display:none}
-@media(max-width:600px){.grid2{grid-template-columns:1fr}.nav-dots{display:none}}
+::-webkit-scrollbar{width:10px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:#222;border-radius:5px}
+::-webkit-scrollbar-thumb:hover{background:var(--gold)}
+.skip{position:absolute;left:-9999px;top:0;background:var(--gold);color:#000;padding:8px 16px;z-index:999}
+.skip:focus{left:8px;top:8px}
+
+/* ────────────────────────── typography ────────────────────────── */
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.42em;color:var(--gold);
+  text-transform:uppercase;display:flex;align-items:center;gap:14px;margin-bottom:22px}
+.eyebrow::before{content:"";width:34px;height:1px;background:var(--gold);opacity:.6}
+.eyebrow .idx{color:var(--dim);letter-spacing:.2em}
+h2{font-family:var(--serif);font-size:clamp(30px,4.6vw,52px);font-weight:400;color:var(--ink);
+  line-height:1.12;letter-spacing:-.01em;margin:0 0 22px;max-width:18em}
+h2 em{font-style:italic;color:var(--gold-hi);font-weight:300}
+.lede{font-size:clamp(15px,1.6vw,17.5px);line-height:1.85;color:var(--txt);max-width:62ch}
+.lede + .lede{margin-top:14px}
+.small{font-size:13px;color:var(--mut);line-height:1.7}
+
+/* ────────────────────────── layout ────────────────────────── */
+.section{padding:clamp(80px,12vh,140px) 24px;max-width:1060px;margin:0 auto;position:relative}
+.rule{height:1px;max-width:1060px;margin:0 auto;
+  background:linear-gradient(90deg,transparent,var(--bdr2) 18%,var(--bdr2) 82%,transparent)}
+.grid2{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:14px}
+.grid3{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+
+/* ────────────────────────── nav ────────────────────────── */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;
+  align-items:center;padding:18px clamp(20px,4vw,44px);transition:all .45s var(--ease)}
+.nav.scrolled{background:rgba(7,7,8,.82);backdrop-filter:blur(16px);border-bottom:1px solid var(--bdr);padding:12px clamp(20px,4vw,44px)}
+.logo{display:flex;align-items:center;gap:11px;cursor:pointer}
+.logo svg{width:26px;height:26px}
+.logo span{font-family:var(--mono);font-size:12px;letter-spacing:.34em;color:var(--ink);text-transform:uppercase}
+.nav-links{display:flex;gap:26px}
+.nav-links a{font-family:var(--mono);font-size:11px;letter-spacing:.18em;color:var(--mut);
+  text-transform:uppercase;transition:color .3s;position:relative;padding:4px 0}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--gold);transition:width .35s var(--ease)}
+.nav-links a:hover{color:var(--ink)}
+.nav-links a:hover::after{width:100%}
+.burger{display:none;background:none;border:1px solid var(--bdr2);color:var(--ink);width:40px;height:40px;
+  border-radius:8px;cursor:pointer;font-size:16px}
+.mmenu{position:fixed;inset:0;background:rgba(7,7,8,.97);backdrop-filter:blur(20px);z-index:99;
+  display:flex;flex-direction:column;justify-content:center;align-items:center;gap:8px;
+  opacity:0;pointer-events:none;transition:opacity .4s}
+.mmenu.open{opacity:1;pointer-events:auto}
+.mmenu a{font-family:var(--serif);font-size:30px;color:var(--txt);padding:8px;transition:color .3s}
+.mmenu a:hover{color:var(--gold)}
+.progress{position:fixed;top:0;left:0;height:2px;background:linear-gradient(90deg,var(--gold),var(--gold-hi));
+  width:0;z-index:101;transition:width .15s linear}
+@media(max-width:780px){.nav-links{display:none}.burger{display:block}}
+
+/* ────────────────────────── hero ────────────────────────── */
+.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:center;
+  padding:120px 24px 80px;max-width:1060px;margin:0 auto;position:relative}
+#graph{position:fixed;inset:0;z-index:-1;opacity:.9}
+.hero-kicker{font-family:var(--mono);font-size:12px;letter-spacing:.5em;color:var(--mut);
+  text-transform:uppercase;margin-bottom:30px;display:flex;align-items:center;gap:16px}
+.hero-kicker::before{content:"";width:48px;height:1px;background:var(--gold)}
+.hero h1{font-family:var(--serif);font-weight:300;color:var(--ink);
+  font-size:clamp(54px,10.5vw,128px);line-height:.98;letter-spacing:-.025em;margin-bottom:34px}
+.hero h1 .ital{display:block;font-style:italic;color:var(--gold-hi);font-weight:300}
+.hero-sub{font-size:clamp(15px,1.8vw,19px);line-height:1.8;color:var(--txt);max-width:54ch;margin-bottom:18px}
+.hero-sub b{color:var(--ink);font-weight:500}
+.hero-meta{font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;color:var(--dim);margin-bottom:44px}
+.hero-ctas{display:flex;gap:12px;flex-wrap:wrap}
+.scroll-cue{position:absolute;bottom:30px;left:24px;display:flex;align-items:center;gap:12px;
+  font-family:var(--mono);font-size:10px;letter-spacing:.3em;color:var(--dim);text-transform:uppercase}
+.scroll-cue::after{content:"";width:1px;height:44px;background:linear-gradient(var(--gold),transparent);
+  animation:drip 2.2s var(--ease) infinite}
+@keyframes drip{0%{transform:scaleY(0);transform-origin:top}55%{transform:scaleY(1);transform-origin:top}56%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* ────────────────────────── buttons ────────────────────────── */
+.btn{display:inline-flex;align-items:center;gap:9px;padding:13px 26px;border:1px solid var(--bdr2);
+  color:var(--ink);border-radius:100px;font-family:var(--mono);font-size:11px;letter-spacing:.2em;
+  text-transform:uppercase;cursor:pointer;background:transparent;position:relative;overflow:hidden;
+  transition:all .4s var(--ease)}
+.btn::before{content:"";position:absolute;inset:0;background:var(--gold);transform:translateY(102%);
+  transition:transform .4s var(--ease);z-index:-1;border-radius:100px}
+.btn:hover{color:#0a0a0c;border-color:var(--gold)}
+.btn:hover::before{transform:translateY(0)}
+.btn.primary{border-color:var(--gold);color:var(--gold)}
+.btn.primary:hover{color:#0a0a0c}
+.btn.ghost{border-color:transparent;color:var(--mut)}
+.btn.ghost:hover{color:#0a0a0c}
+
+/* ────────────────────────── marquee ────────────────────────── */
+.marquee{overflow:hidden;border-top:1px solid var(--bdr);border-bottom:1px solid var(--bdr);
+  padding:17px 0;background:var(--bg2)}
+.marquee-track{display:flex;gap:0;width:max-content;animation:scroll 36s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+.mi{font-family:var(--serif);font-size:17px;font-style:italic;color:var(--mut);white-space:nowrap;padding:0 28px;
+  display:flex;align-items:center;gap:56px}
+.mi::after{content:"✦";font-style:normal;font-size:10px;color:var(--gold)}
+@keyframes scroll{to{transform:translateX(-50%)}}
+
+/* ────────────────────────── now building ────────────────────────── */
+.lab{position:relative}
+.lab-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:16px;margin-top:42px}
+.pillar{background:linear-gradient(160deg,var(--card),#0c0c10);border:1px solid var(--bdr);
+  border-radius:16px;padding:30px 26px;position:relative;overflow:hidden;transition:all .5s var(--ease)}
+.pillar::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:0;transition:opacity .5s}
+.pillar:hover{transform:translateY(-5px);border-color:#c9a96e3d;box-shadow:0 24px 60px -28px rgba(201,169,110,.18)}
+.pillar:hover::before{opacity:1}
+.pillar .pnum{font-family:var(--mono);font-size:11px;color:var(--gold);letter-spacing:.3em;margin-bottom:16px;display:block}
+.pillar h3{font-family:var(--serif);font-size:21px;font-weight:500;color:var(--ink);margin-bottom:12px;line-height:1.3}
+.pillar p{font-size:13.5px;line-height:1.75;color:var(--mut)}
+.lab-artifacts{margin-top:40px;border:1px solid var(--bdr);border-radius:16px;overflow:hidden}
+.artifact{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:17px 22px;
+  border-bottom:1px solid var(--bdr);transition:background .3s;flex-wrap:wrap}
+.artifact:last-child{border-bottom:none}
+.artifact:hover{background:var(--gold-dim)}
+.artifact .at{font-size:14px;color:var(--ink)}
+.artifact .ad{font-family:var(--mono);font-size:11px;color:var(--dim);letter-spacing:.08em}
+.artifact .arrow{color:var(--gold);font-size:14px;transition:transform .3s var(--ease)}
+.artifact:hover .arrow{transform:translate(4px,-4px)}
+
+/* ────────────────────────── about / timeline ────────────────────────── */
+.about-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:60px;align-items:start}
+@media(max-width:840px){.about-grid{grid-template-columns:1fr;gap:40px}}
+.tl{position:relative;padding-left:26px}
+.tl::before{content:"";position:absolute;left:5px;top:6px;bottom:6px;width:1px;
+  background:linear-gradient(var(--gold),var(--bdr2))}
+.tl-item{position:relative;padding-bottom:26px}
+.tl-item:last-child{padding-bottom:0}
+.tl-item::before{content:"";position:absolute;left:-26px;top:5px;width:11px;height:11px;border-radius:50%;
+  background:var(--bg);border:1.5px solid var(--dim)}
+.tl-item.now::before{border-color:var(--gold);background:var(--gold);box-shadow:0 0 14px rgba(201,169,110,.6)}
+.tl-y{font-family:var(--mono);font-size:11px;color:var(--gold);letter-spacing:.18em;margin-bottom:3px}
+.tl-r{font-size:14.5px;color:var(--ink)}
+.tl-c{font-size:12.5px;color:var(--mut);margin-top:2px}
+.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:26px}
+.tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;color:var(--mut);
+  border:1px solid var(--bdr2);border-radius:100px;padding:5px 13px;transition:all .3s}
+.tag:hover{color:var(--gold);border-color:#c9a96e55}
+
+/* ────────────────────────── impact ────────────────────────── */
+.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1px;
+  background:var(--bdr);border:1px solid var(--bdr);border-radius:16px;overflow:hidden;margin:42px 0}
+.metric{background:var(--bg2);padding:26px 18px;text-align:center;transition:background .4s}
+.metric:hover{background:var(--card)}
+.metric .mv{font-family:var(--serif);font-size:clamp(24px,3vw,34px);font-weight:400;color:var(--gold-hi)}
+.metric .ml{font-family:var(--mono);font-size:10px;color:var(--mut);letter-spacing:.22em;text-transform:uppercase;margin-top:7px}
+.icard{background:var(--card);border:1px solid var(--bdr);border-radius:14px;padding:24px;transition:all .45s var(--ease)}
+.icard:hover{border-color:#c9a96e3d;transform:translateY(-4px)}
+.icard .iv{font-family:var(--serif);font-size:26px;color:var(--gold);margin-bottom:4px}
+.icard .il{font-family:var(--mono);font-size:10px;letter-spacing:.24em;color:var(--mut);text-transform:uppercase;margin-bottom:11px}
+.icard p{font-size:13px;color:var(--mut);line-height:1.7}
+.acc{padding:13px 18px;font-size:13.5px;color:var(--mut);line-height:1.7;border-left:1px solid var(--bdr2);
+  margin-left:6px;position:relative;transition:all .3s}
+.acc::before{content:"";position:absolute;left:-3.5px;top:20px;width:6px;height:6px;border-radius:50%;background:var(--dim);transition:background .3s}
+.acc:hover{color:var(--txt);border-left-color:var(--gold)}
+.acc:hover::before{background:var(--gold)}
+.toggler{margin-top:22px;background:none;border:1px solid var(--bdr2);color:var(--mut);padding:11px 24px;
+  border-radius:100px;cursor:pointer;font-family:var(--mono);font-size:10.5px;letter-spacing:.22em;
+  text-transform:uppercase;transition:all .35s}
+.toggler:hover{color:var(--gold);border-color:#c9a96e55}
+
+/* ────────────────────────── cards (projects/cases) ────────────────────────── */
+.pcard{display:block;background:var(--card);border:1px solid var(--bdr);border-radius:14px;padding:24px;
+  height:100%;transition:all .45s var(--ease);position:relative;overflow:hidden}
+.pcard::after{content:"↗";position:absolute;top:18px;right:20px;color:var(--dim);font-size:14px;transition:all .35s var(--ease)}
+.pcard:hover{border-color:#c9a96e3d;transform:translateY(-5px);box-shadow:0 26px 60px -30px rgba(0,0,0,.7)}
+.pcard:hover::after{color:var(--gold);transform:translate(3px,-3px)}
+.pcard .pk{font-family:var(--mono);font-size:10px;letter-spacing:.26em;color:var(--gold);text-transform:uppercase;margin-bottom:10px}
+.pcard h3{font-family:var(--serif);font-size:18.5px;font-weight:500;color:var(--ink);margin-bottom:9px;line-height:1.35;padding-right:18px}
+.pcard p{font-size:13px;color:var(--mut);line-height:1.7;margin-bottom:13px}
+
+/* ────────────────────────── rows (certs/writing) ────────────────────────── */
+.row{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 20px;
+  border-bottom:1px solid var(--bdr);transition:all .3s;flex-wrap:wrap}
+.row:hover{background:var(--gold-dim);padding-left:26px}
+.row .rt{font-size:14px;color:var(--txt)}
+.row .rs{font-family:var(--mono);font-size:10.5px;color:var(--dim);letter-spacing:.14em;white-space:nowrap}
+.pill{font-family:var(--mono);font-size:10px;padding:4px 11px;border-radius:100px;border:1px solid;letter-spacing:.1em}
+.pill.pub{border-color:#22c55e44;color:#4ade80}
+.pill.prog{border-color:#c9a96e55;color:var(--gold)}
+
+/* ────────────────────────── quote / contact ────────────────────────── */
+.quote{border-left:2px solid var(--gold);padding:6px 0 6px 28px;margin-top:38px}
+.quote p{font-family:var(--serif);font-style:italic;font-size:17px;color:var(--txt);line-height:1.8}
+.quote cite{display:block;font-family:var(--mono);font-style:normal;font-size:11px;color:var(--dim);
+  letter-spacing:.18em;margin-top:10px;text-transform:uppercase}
+.contact{text-align:center;padding-bottom:140px}
+.contact h2{margin-left:auto;margin-right:auto}
+.bigmail{font-family:var(--serif);font-size:clamp(22px,4.4vw,42px);font-style:italic;color:var(--gold-hi);
+  display:inline-block;margin:24px 0 40px;border-bottom:1px solid #c9a96e44;padding-bottom:6px;transition:all .4s}
+.bigmail:hover{color:var(--gold);border-color:var(--gold)}
+footer{text-align:center;padding:34px 20px;border-top:1px solid var(--bdr)}
+footer .f1{font-family:var(--mono);font-size:11px;color:var(--dim);letter-spacing:.16em}
+footer .f2{font-family:var(--mono);font-size:10px;color:#333;letter-spacing:.1em;margin-top:8px}
+
+/* ────────────────────────── reveal animation ────────────────────────── */
+.rv{opacity:0;transform:translateY(34px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rv.in{opacity:1;transform:none}
+.rv-d1{transition-delay:.08s}.rv-d2{transition-delay:.16s}.rv-d3{transition-delay:.24s}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .rv{opacity:1;transform:none}
+  html{scroll-behavior:auto}
+}
 </style>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="progress" id="progress"></div>
+<canvas id="graph" aria-hidden="true"></canvas>
 
 <!-- NAV -->
-<nav class="nav" id="navbar">
-  <div class="nav-logo" onclick="scrollTo('home')">S. Safaya</div>
-  <div class="nav-dots" id="navdots"></div>
-  <button class="hamburger" onclick="toggleMenu()">☰</button>
+<nav class="nav" id="navbar" aria-label="Primary">
+  <div class="logo" onclick="go('home')">
+    <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+      <circle cx="9" cy="10" r="3.2" fill="#c9a96e"/>
+      <circle cx="23" cy="8" r="2.1" fill="#c9a96e" opacity=".55"/>
+      <circle cx="20" cy="23" r="2.6" fill="#c9a96e" opacity=".8"/>
+      <path d="M9 10L23 8M9 10l11 13M23 8l-3 15" stroke="#c9a96e" stroke-width=".9" opacity=".5"/>
+    </svg>
+    <span>Safaya</span>
+  </div>
+  <div class="nav-links">
+    <a href="#building">Building</a><a href="#about">About</a><a href="#impact">Impact</a>
+    <a href="#code">Code</a><a href="#community">Community</a><a href="#writing">Writing</a>
+    <a href="#contact" style="color:var(--gold)">Contact</a>
+  </div>
+  <button class="burger" onclick="menu()" aria-label="Menu">☰</button>
 </nav>
-<div class="mobile-menu" id="mobilemenu"></div>
+<div class="mmenu" id="mmenu">
+  <a href="#building" onclick="menu()">Building</a><a href="#about" onclick="menu()">About</a>
+  <a href="#impact" onclick="menu()">Impact</a><a href="#code" onclick="menu()">Code</a>
+  <a href="#community" onclick="menu()">Community</a><a href="#writing" onclick="menu()">Writing</a>
+  <a href="#contact" onclick="menu()">Contact</a>
+</div>
 
-<!-- HOME -->
-<section id="home" style="min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;position:relative">
-  <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 50% 30%,#c9a96e06 0%,transparent 60%)"></div>
-  <div style="position:relative;z-index:1">
-    <div style="font-family:'Inter',sans-serif;font-size:11px;letter-spacing:8px;color:#555;margin-bottom:18px;text-transform:uppercase">Product Manager · Engineer · Builder</div>
-    <h1 style="font-size:clamp(32px,7vw,56px);font-weight:300;color:#e8e4dc;margin:0 0 12px;line-height:1.15;letter-spacing:-1px">Shubham Safaya</h1>
-    <p style="font-size:16px;color:#777;max-width:500px;margin:0 auto 24px;line-height:1.7">
-      Product Manager at Walmart Global Tech. Building data products at the intersection of <span style="color:var(--gold)">customer identity</span>, <span style="color:var(--gold)">advertising</span>, and <span style="color:var(--gold)">privacy</span>.
-    </p>
-    <p style="font-family:'Inter',sans-serif;font-size:12px;color:#555;margin-bottom:28px">Duke MEM '22 · GPA 3.9 · Ex-KPMG · Kashmiri Pandit from Jammu · Bentonville, AR</p>
-    <div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap">
-      <a href="#impact" class="btn">View Work</a>
-      <a href="https://www.youtube.com/@sundayswithsafaya" target="_blank" class="btn btn-red">YouTube ▶</a>
-      <a href="https://www.instagram.com/sundays_with_safaya/" target="_blank" class="btn btn-pink">Instagram</a>
-      <a href="https://topmate.io/sundays_with_safaya" target="_blank" class="btn btn-purple">Book a Session</a>
-    </div>
+<main id="main">
+<!-- HERO -->
+<header class="hero" id="home">
+  <div class="hero-kicker">Senior Product Manager · Walmart Global Tech</div>
+  <h1>Every customer is<br><span class="ital">a graph waiting</span> to be understood.</h1>
+  <p class="hero-sub">I'm <b>Shubham Safaya</b>. I build the <b>identity layer</b> of retail media —
+    resolving millions of fragmented signals into people, so advertising gets <b>personal without
+    getting creepy</b>. I write the spec <em>and</em> the code.</p>
+  <div class="hero-meta">DUKE MEM '23 &nbsp;·&nbsp; EX-KPMG &nbsp;·&nbsp; JAMMU → MUMBAI → DURHAM → BENTONVILLE</div>
+  <div class="hero-ctas">
+    <a href="#building" class="btn primary">What I'm building</a>
+    <a href="#impact" class="btn">Proof of work</a>
+    <a href="https://topmate.io/sundays_with_safaya" target="_blank" rel="noopener" class="btn ghost">Book a session</a>
+  </div>
+  <div class="scroll-cue">Scroll</div>
+</header>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track" id="mtrack">
+    <span class="mi">Data Identity</span><span class="mi">Ads Personalization</span>
+    <span class="mi">Privacy by Design</span><span class="mi">Identity Graphs</span>
+    <span class="mi">Retail Media</span><span class="mi">Clean Rooms</span>
+    <span class="mi">Customer Data Platforms</span><span class="mi">AI Products</span>
+  </div>
+</div>
+
+<!-- NOW BUILDING -->
+<section id="building" class="section lab">
+  <div class="rv"><span class="eyebrow"><span class="idx">01</span> Now Building</span>
+  <h2>The identity layer for the <em>post-cookie</em>, AI-personalized internet</h2>
+  <p class="lede">Third-party cookies are dead, AI made personalization table stakes, and privacy law
+    finally has teeth. The companies that win the next decade of advertising are the ones that solve
+    <b style="color:var(--ink)">identity</b> — who a customer actually is across devices, stores, and
+    sessions — with consent built in, not bolted on. That's the problem I work on every day at Walmart
+    scale, and the body of work I'm building in public.</p></div>
+
+  <div class="lab-grid">
+    <div class="pillar rv"><span class="pnum">I / DATA IDENTITY</span>
+      <h3>Resolving people, not records</h3>
+      <p>Deterministic + probabilistic identity resolution across 22M+ new customer records a year.
+      Match-rate lifts of 18%, 400K net-new IDs, and an open-source engine that shows the craft —
+      normalization, Jaro-Winkler matching, graph clustering, survivorship.</p></div>
+    <div class="pillar rv rv-d1"><span class="pnum">II / ADS PERSONALIZATION</span>
+      <h3>Audiences that perform</h3>
+      <p>250+ audience personas powering non-endemic targeting, $15M+ incremental ad revenue, and
+      $3.5B in GMV traced back to campaigns. Personalization that respects the person — suppression
+      logic, consent state, and measurement designed in from day one.</p></div>
+    <div class="pillar rv rv-d2"><span class="pnum">III / PRIVACY BY DESIGN</span>
+      <h3>Trust as infrastructure</h3>
+      <p>CPRA/GDPR compliance at ingestion speed: automated purge logic, opt-out propagation, and
+      clean-room patterns. Privacy isn't a feature you ship — it's the constraint that makes
+      identity products durable.</p></div>
+  </div>
+
+  <div class="lab-artifacts rv">
+    <a class="artifact" href="https://github.com/Shubham-Safaya/identity-resolution-engine" target="_blank" rel="noopener">
+      <div><div class="at">Identity Resolution Engine</div><div class="ad">OPEN SOURCE · PYTHON · 108 TESTS</div></div><span class="arrow">↗</span></a>
+    <a class="artifact" href="https://www.linkedin.com/in/shubham-safaya/" target="_blank" rel="noopener">
+      <div><div class="at">Customer Data Identity × Advertising × Privacy — 15-day series</div><div class="ad">LINKEDIN · RUNNING NOW</div></div><span class="arrow">↗</span></a>
+    <a class="artifact" href="https://github.com/Shubham-Safaya/daily-engineering-log" target="_blank" rel="noopener">
+      <div><div class="at">Daily Engineering Log</div><div class="ad">IDENTITY · ADTECH · PRIVACY — AUTOMATED DAILY</div></div><span class="arrow">↗</span></a>
+    <a class="artifact" href="https://shubhamsafaya.wordpress.com" target="_blank" rel="noopener">
+      <div><div class="at">Essays: clean rooms, match rates, crosswalks</div><div class="ad">BLOG · LONG-FORM</div></div><span class="arrow">↗</span></a>
   </div>
 </section>
+
+<div class="rule"></div>
 
 <!-- ABOUT -->
-<div class="divider"></div>
 <section id="about" class="section">
-  <span class="label">About</span>
-  <h2 class="h2">From Jammu to Walmart Global Tech — via KPMG, Duke, and a YouTube Channel</h2>
-  <p class="body">I'm a Product Manager who believes the best products emerge when you deeply understand both the data and the human behind it. My journey started in consulting at KPMG India, where I learned to think in frameworks and stakeholder maps. Duke's MEM program (GPA 3.9, PM track, Ex-President) gave me the engineering-meets-business lens. JM Family Enterprises taught me analytics product craft. And Walmart — Walmart taught me scale.</p>
-  <p class="body" style="margin-top:12px">Today I build third-party data products that power retail media advertising — negotiating vendor partnerships, designing identity resolution systems, and ensuring privacy compliance at enterprise scale. Outside work, I host <span style="color:var(--gold)">Sundays with Safaya</span> on YouTube and Instagram, helping people navigate careers in tech.</p>
-
-  <!-- Skills -->
-  <div style="margin-top:24px;display:flex;flex-wrap:wrap;gap:5px" id="skills-tags"></div>
-
-  <!-- Timeline -->
-  <div style="margin-top:32px">
-    <span class="label">Journey</span>
-    <div id="timeline"></div>
+  <div class="rv"><span class="eyebrow"><span class="idx">02</span> About</span>
+  <h2>From Jammu to Walmart Global Tech — <em>via KPMG, Duke,</em> and a YouTube channel</h2></div>
+  <div class="about-grid">
+    <div class="rv rv-d1">
+      <p class="lede">I'm a product manager who believes the best products emerge when you deeply
+        understand both the data and the human behind it. KPMG India taught me frameworks and
+        stakeholder maps. Duke's MEM (GPA 3.9, PM track, ex-President) gave me the
+        engineering-meets-business lens. JM Family taught me analytics product craft.
+        Walmart taught me scale.</p>
+      <p class="lede">Today I negotiate third-party data partnerships, design identity resolution
+        systems, and keep enterprise personalization on the right side of privacy law. On Sundays,
+        I host <a href="https://www.youtube.com/@sundayswithsafaya" target="_blank" rel="noopener" style="color:var(--gold);border-bottom:1px solid #c9a96e44">Sundays with Safaya</a> —
+        helping people navigate tech careers.</p>
+      <div class="tags" id="skills"></div>
+    </div>
+    <div class="rv rv-d2"><div class="tl" id="timeline"></div></div>
   </div>
 </section>
+
+<div class="rule"></div>
 
 <!-- IMPACT -->
-<div class="divider"></div>
 <section id="impact" class="section">
-  <span class="label">Impact</span>
-  <h2 class="h2">Products that moved real numbers</h2>
-  <div class="grid4" style="margin-bottom:28px" id="metrics-grid"></div>
-  <div class="grid2" style="margin-bottom:24px" id="impact-cards"></div>
-
-  <span class="label">Case Studies</span>
-  <div id="work-cases"></div>
-
-  <div style="margin-top:20px">
-    <span class="label">Detailed Accomplishments</span>
-    <div id="accomplishments"></div>
-    <button class="toggler" onclick="toggleAccomplishments()">Show all 23 accomplishments</button>
+  <div class="rv"><span class="eyebrow"><span class="idx">03</span> Impact</span>
+  <h2>Products that moved <em>real numbers</em></h2></div>
+  <div class="metrics rv" id="metrics"></div>
+  <div class="grid2" id="icards"></div>
+  <div style="margin-top:48px" class="rv">
+    <span class="eyebrow" style="margin-bottom:14px">Receipts</span>
+    <div id="accs"></div>
+    <button class="toggler" onclick="toggleAcc()" id="accbtn">Show all 23 accomplishments</button>
   </div>
 </section>
 
-<!-- DUKE CASES -->
-<div class="divider"></div>
-<section id="cases" class="section">
-  <span class="label">Academic Portfolio</span>
-  <h2 class="h2">Case studies from Duke University MEM</h2>
-  <p class="body" style="font-size:15px;margin-bottom:16px">Strategy, marketing, and product case studies at Duke — covering Netflix, Tesla, Best Buy, Snapchat, and more. Click to view the full presentation.</p>
-  <div class="grid2" id="duke-cases"></div>
-  <button class="toggler" onclick="toggleDukeCases()">Show all 9 cases</button>
-</section>
+<div class="rule"></div>
 
-<!-- YOUTUBE -->
-<div class="divider"></div>
-<section id="youtube" class="section">
-  <span class="label">Sundays with Safaya</span>
-  <h2 class="h2">35+ episodes helping people crack interviews, navigate careers, and build lives in tech</h2>
-  <p class="body">What started as helping 7 friends break into consulting grew into a YouTube series with 35+ episodes featuring professionals across tech, consulting, and entrepreneurship. Every Sunday — real stories, no scripts, no fluff.</p>
-  <div style="display:flex;gap:8px;margin-top:20px;flex-wrap:wrap">
-    <a href="https://www.youtube.com/@sundayswithsafaya" target="_blank" class="btn btn-red">Watch on YouTube ▶</a>
-    <a href="https://www.instagram.com/sundays_with_safaya/" target="_blank" class="btn btn-pink">Follow on Instagram</a>
-  </div>
-  <div class="grid3" style="margin-top:24px">
-    <div class="card" style="text-align:center"><div style="font-size:24px;margin-bottom:4px">🎙</div><div style="font-size:13px;color:#ccc;margin-bottom:3px">Interviews</div><div style="font-family:'Inter',sans-serif;font-size:11px;color:var(--dim);line-height:1.5">Career journeys — consulting to tech to startups</div></div>
-    <div class="card" style="text-align:center"><div style="font-size:24px;margin-bottom:4px">📋</div><div style="font-size:13px;color:#ccc;margin-bottom:3px">How-To Guides</div><div style="font-family:'Inter',sans-serif;font-size:11px;color:var(--dim);line-height:1.5">Masters in US, job search, resume, interview prep</div></div>
-    <div class="card" style="text-align:center"><div style="font-size:24px;margin-bottom:4px">⚡</div><div style="font-size:13px;color:#ccc;margin-bottom:3px">Shorts</div><div style="font-family:'Inter',sans-serif;font-size:11px;color:var(--dim);line-height:1.5">Quick career tips and episode highlights</div></div>
+<!-- CODE -->
+<section id="code" class="section">
+  <div class="rv"><span class="eyebrow"><span class="idx">04</span> Open Source</span>
+  <h2>I write the spec <em>and</em> the code</h2>
+  <p class="lede" style="margin-bottom:38px">Everything here ships, runs on automation, and solves a
+    problem I actually had. PMs who build have better intuition about what they ask engineers to do.</p></div>
+  <div class="grid2" id="projects"></div>
+  <div style="margin-top:26px;display:flex;gap:12px;flex-wrap:wrap" class="rv">
+    <a href="https://github.com/Shubham-Safaya" target="_blank" rel="noopener" class="btn">GitHub profile</a>
+    <a href="https://shubhamsafaya.wordpress.com" target="_blank" rel="noopener" class="btn ghost">The blog</a>
   </div>
 </section>
 
-<!-- ENGINEERING -->
-<div class="divider"></div>
-<section id="engineering" class="section">
-  <span class="label">Open Source & Engineering</span>
-  <h2 class="h2">I write the spec AND the code</h2>
-  <p class="body" style="font-size:15px;margin-bottom:16px">Open-source tools and side projects. Everything here is something I built to solve a real problem.</p>
-  <div class="grid2" id="projects-grid"></div>
-  <div style="margin-top:16px;display:flex;gap:8px;flex-wrap:wrap">
-    <a href="https://github.com/Shubham-Safaya" target="_blank" class="btn">View GitHub Profile</a>
-    <a href="https://shubhamsafaya.wordpress.com" target="_blank" class="btn">Read the Blog</a>
+<div class="rule"></div>
+
+<!-- COMMUNITY (YouTube + Coaching) -->
+<section id="community" class="section">
+  <div class="rv"><span class="eyebrow"><span class="idx">05</span> Community</span>
+  <h2>Sundays with Safaya — <em>35+ episodes,</em> 173+ people coached</h2>
+  <p class="lede">What started as helping 7 friends break into consulting became a YouTube series of
+    real career stories — no scripts, no fluff — plus 1:1 coaching that's earned a 4.9★ rating and
+    Top 1% status on Topmate. Resume reviews, interview prep, Masters-in-US guidance, PM career strategy.</p></div>
+  <div class="grid3" style="margin-top:38px">
+    <div class="pcard rv" style="cursor:default"><div class="pk">YouTube</div><h3>Interviews & guides</h3>
+      <p>Career journeys across tech, consulting, startups. Masters in the US, job search, interview prep.</p></div>
+    <div class="pcard rv rv-d1" style="cursor:default"><div class="pk">Coaching</div><h3>173+ sessions · 4.9★</h3>
+      <p>Top 1% on Topmate. Real conversations, no templates — resume, referrals, US job market.</p></div>
+    <div class="pcard rv rv-d2" style="cursor:default"><div class="pk">Reach</div><h3>9.4K on LinkedIn</h3>
+      <p>Daily writing on identity, adtech, and AI product management. Goal: 20K by mid-2027.</p></div>
+  </div>
+  <div style="display:flex;gap:12px;margin-top:30px;flex-wrap:wrap" class="rv">
+    <a href="https://www.youtube.com/@sundayswithsafaya" target="_blank" rel="noopener" class="btn">YouTube ▶</a>
+    <a href="https://www.instagram.com/sundays_with_safaya/" target="_blank" rel="noopener" class="btn ghost">Instagram</a>
+    <a href="https://topmate.io/sundays_with_safaya" target="_blank" rel="noopener" class="btn primary">Book on Topmate</a>
+  </div>
+  <div class="quote rv">
+    <p>"Shubham was wonderful — he listened patiently and gave me a ton of useful advice on my resume and job search!"</p>
+    <cite>— Dhanush · Coaching client · Aug 2025</cite>
   </div>
 </section>
 
-<!-- COACHING -->
-<div class="divider"></div>
-<section id="coaching" class="section">
-  <span class="label">Career Coaching</span>
-  <h2 class="h2">173+ sessions · 4.9★ · Top 1% on Topmate</h2>
-  <p class="body">1:1 sessions covering resume reviews, interview prep, Masters in US guidance, job search strategy, and PM career advice. Real conversations — no templates.</p>
-  <div class="grid3" style="margin-top:16px">
-    <div class="card"><div style="font-size:13px;color:#ccc">1:1 Consultation</div></div>
-    <div class="card"><div style="font-size:13px;color:#ccc">Resume Review</div></div>
-    <div class="card"><div style="font-size:13px;color:#ccc">Masters in US</div></div>
-    <div class="card"><div style="font-size:13px;color:#ccc">Finding Jobs in US</div></div>
-    <div class="card"><div style="font-size:13px;color:#ccc">Referral Request</div></div>
-  </div>
-  <div style="margin-top:16px"><a href="https://topmate.io/sundays_with_safaya" target="_blank" class="btn btn-purple">Book on Topmate</a></div>
-  <div style="margin-top:24px;padding:16px;border-left:2px solid #c9a96e33;background:var(--card);border-radius:0 8px 8px 0">
-    <p style="font-size:14px;color:#aaa;font-style:italic;line-height:1.7;margin:0 0 4px">"Shubham was wonderful — he listened patiently and gave me a ton of useful advice on my resume and job search!"</p>
-    <div style="font-family:'Inter',sans-serif;font-size:11px;color:var(--dim)">— Dhanush, Aug 2025</div>
+<div class="rule"></div>
+
+<!-- ACADEMICS + CERTS -->
+<section id="credentials" class="section">
+  <div class="rv"><span class="eyebrow"><span class="idx">06</span> Credentials</span>
+  <h2>Duke case studies & <em>certifications</em></h2></div>
+  <div class="grid2" id="cases" style="margin-bottom:14px"></div>
+  <button class="toggler rv" onclick="toggleDC()" id="dcbtn">Show all 10 Duke cases</button>
+  <div style="margin-top:52px" class="rv">
+    <span class="eyebrow" style="margin-bottom:14px">Certifications</span>
+    <div id="certs" style="border:1px solid var(--bdr);border-radius:14px;overflow:hidden"></div>
   </div>
 </section>
 
-<!-- CERTIFICATIONS -->
-<div class="divider"></div>
-<section id="certs" class="section">
-  <span class="label">Certifications</span>
-  <h2 class="h2">Credentials across product, cloud, data & security</h2>
-  <div id="certs-list"></div>
-</section>
+<div class="rule"></div>
 
 <!-- WRITING -->
-<div class="divider"></div>
 <section id="writing" class="section">
-  <span class="label">Writing & Thought Leadership</span>
-  <h2 class="h2">Customer Data Identity × Advertising × Privacy</h2>
-  <p class="body" style="font-size:15px;margin-bottom:16px">Building a body of work at the intersection of identity resolution, advertising technology, and data privacy. Currently running a 15-day LinkedIn series.</p>
-  <div id="writing-list"></div>
-  <div style="margin-top:16px"><a href="https://www.linkedin.com/in/shubham-safaya/" target="_blank" class="btn btn-blue">Follow on LinkedIn</a></div>
+  <div class="rv"><span class="eyebrow"><span class="idx">07</span> Writing</span>
+  <h2>Identity × Advertising × Privacy, <em>in public</em></h2>
+  <p class="lede" style="margin-bottom:34px">Building a body of work at the intersection nobody
+    explains well — how customer identity actually works, why match rates lie, and what
+    privacy-preserving personalization looks like in production.</p></div>
+  <div id="wlist" class="rv" style="border:1px solid var(--bdr);border-radius:14px;overflow:hidden"></div>
+  <div style="margin-top:26px" class="rv">
+    <a href="https://www.linkedin.com/in/shubham-safaya/" target="_blank" rel="noopener" class="btn primary">Follow on LinkedIn</a>
+  </div>
 </section>
 
 <!-- CONTACT -->
-<div class="divider"></div>
-<section id="contact" class="section" style="text-align:center;padding-bottom:100px">
-  <span class="label">Connect</span>
-  <h2 class="h2">Let's build something together</h2>
-  <p class="body" style="max-width:440px;margin:0 auto 24px">Open to conversations about product management, data identity, advertising tech, career coaching, podcast collaborations, and speaking.</p>
-  <div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap">
-    <a href="https://www.linkedin.com/in/shubham-safaya/" target="_blank" class="btn btn-blue">LinkedIn</a>
-    <a href="https://www.youtube.com/@sundayswithsafaya" target="_blank" class="btn btn-red">YouTube</a>
-    <a href="https://www.instagram.com/sundays_with_safaya/" target="_blank" class="btn btn-pink">Instagram</a>
-    <a href="https://topmate.io/sundays_with_safaya" target="_blank" class="btn btn-purple">Topmate</a>
-    <a href="mailto:safayashubham@gmail.com" class="btn">Email</a>
+<section id="contact" class="section contact">
+  <span class="eyebrow rv" style="justify-content:center"><span class="idx">08</span> Contact</span>
+  <h2 class="rv">Let's build something <em>that matters</em></h2>
+  <p class="lede rv" style="margin:0 auto;max-width:46ch">Product roles in identity, ads & AI ·
+    speaking · podcast collabs · coaching. My inbox is open.</p>
+  <a class="bigmail rv" href="mailto:safayashubham@gmail.com">safayashubham@gmail.com</a>
+  <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap" class="rv">
+    <a href="https://www.linkedin.com/in/shubham-safaya/" target="_blank" rel="noopener" class="btn">LinkedIn</a>
+    <a href="https://github.com/Shubham-Safaya" target="_blank" rel="noopener" class="btn">GitHub</a>
+    <a href="https://www.youtube.com/@sundayswithsafaya" target="_blank" rel="noopener" class="btn">YouTube</a>
+    <a href="https://www.instagram.com/sundays_with_safaya/" target="_blank" rel="noopener" class="btn">Instagram</a>
+    <a href="https://topmate.io/sundays_with_safaya" target="_blank" rel="noopener" class="btn primary">Topmate</a>
   </div>
 </section>
+</main>
 
-<!-- FOOTER -->
-<div style="text-align:center;padding:20px;font-family:'Inter',sans-serif;font-size:11px;color:#222;border-top:1px solid var(--bdr)">
-  © 2026 Shubham Safaya · Product Manager @ Walmart Global Tech · Duke MEM '22
-</div>
+<footer>
+  <div class="f1">© <span id="yr">2026</span> SHUBHAM SAFAYA · SENIOR PRODUCT MANAGER · WALMART GLOBAL TECH</div>
+  <div class="f2">DESIGNED & BUILT BY HAND — ONE HTML FILE, ZERO FRAMEWORKS · THE BACKGROUND IS A LIVE IDENTITY GRAPH RESOLVING ITSELF</div>
+</footer>
 
 <script>
-const SECTIONS=["home","about","impact","cases","youtube","engineering","coaching","certs","writing","contact"];
-let menuOpen=false;
+/* ───────────── identity-graph canvas ───────────── */
+(function(){
+  const c=document.getElementById('graph'),x=c.getContext('2d');
+  const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let W,H,DPR,nodes=[],mouse={x:-9e3,y:-9e3},pulses=[],raf;
+  function size(){DPR=Math.min(devicePixelRatio||1,2);W=innerWidth;H=innerHeight;
+    c.width=W*DPR;c.height=H*DPR;c.style.width=W+'px';c.style.height=H+'px';x.setTransform(DPR,0,0,DPR,0,0);}
+  function init(){nodes=[];const n=Math.min(86,Math.round(W*H/16000));
+    for(let i=0;i<n;i++)nodes.push({x:Math.random()*W,y:Math.random()*H,
+      vx:(Math.random()-.5)*.22,vy:(Math.random()-.5)*.22,
+      r:Math.random()*1.6+.7,anchor:Math.random()<.16});}
+  function step(){
+    x.clearRect(0,0,W,H);
+    const LINK=Math.min(150,W*.12);
+    for(const n of nodes){
+      n.x+=n.vx;n.y+=n.vy;
+      if(n.x<-20)n.x=W+20;if(n.x>W+20)n.x=-20;if(n.y<-20)n.y=H+20;if(n.y>H+20)n.y=-20;
+      const dx=mouse.x-n.x,dy=mouse.y-n.y,d2=dx*dx+dy*dy;
+      if(d2<22500){n.vx+=dx*2e-5;n.vy+=dy*2e-5;}
+      const sp=Math.hypot(n.vx,n.vy);if(sp>.5){n.vx*=.96;n.vy*=.96;}
+    }
+    for(let i=0;i<nodes.length;i++)for(let j=i+1;j<nodes.length;j++){
+      const a=nodes[i],b=nodes[j],dx=a.x-b.x,dy=a.y-b.y,d=Math.hypot(dx,dy);
+      if(d<LINK){const o=(1-d/LINK)*(a.anchor&&b.anchor?.34:.13);
+        x.strokeStyle=a.anchor&&b.anchor?`rgba(201,169,110,${o})`:`rgba(160,156,148,${o})`;
+        x.lineWidth=.6;x.beginPath();x.moveTo(a.x,a.y);x.lineTo(b.x,b.y);x.stroke();
+        if(a.anchor&&b.anchor&&d<LINK*.4&&Math.random()<.0015)pulses.push({x:(a.x+b.x)/2,y:(a.y+b.y)/2,r:2,a:.5});}}
+    for(const n of nodes){
+      x.beginPath();x.arc(n.x,n.y,n.r,0,7);
+      x.fillStyle=n.anchor?'rgba(201,169,110,.85)':'rgba(150,146,138,.5)';x.fill();
+      if(n.anchor){x.beginPath();x.arc(n.x,n.y,n.r+3,0,7);x.strokeStyle='rgba(201,169,110,.16)';x.lineWidth=1;x.stroke();}}
+    for(let i=pulses.length-1;i>=0;i--){const p=pulses[i];p.r+=.7;p.a-=.012;
+      if(p.a<=0){pulses.splice(i,1);continue;}
+      x.beginPath();x.arc(p.x,p.y,p.r,0,7);x.strokeStyle=`rgba(201,169,110,${p.a})`;x.lineWidth=1;x.stroke();}
+    raf=requestAnimationFrame(step);
+  }
+  size();init();
+  if(reduced){step();cancelAnimationFrame(raf);}
+  else{step();
+    addEventListener('pointermove',e=>{mouse.x=e.clientX;mouse.y=e.clientY;},{passive:true});
+    addEventListener('pointerleave',()=>{mouse.x=-9e3;mouse.y=-9e3;});
+    document.addEventListener('visibilitychange',()=>{document.hidden?cancelAnimationFrame(raf):step();});}
+  addEventListener('resize',()=>{size();init();},{passive:true});
+})();
 
-// NAV
-function buildNav(){
-  const dots=document.getElementById('navdots');
-  const menu=document.getElementById('mobilemenu');
-  SECTIONS.forEach(s=>{
-    const d=document.createElement('button');
-    d.className='nav-dot';d.title=s;d.onclick=()=>scrollTo(s);
-    dots.appendChild(d);
-    const b=document.createElement('button');
-    b.textContent=s;b.onclick=()=>scrollTo(s);
-    menu.appendChild(b);
-  });
-}
-function scrollTo(id){
-  menuOpen=false;document.getElementById('mobilemenu').classList.remove('open');
-  document.getElementById(id)?.scrollIntoView({behavior:'smooth'});
-  document.querySelector('.hamburger').textContent='☰';
-}
-function toggleMenu(){
-  menuOpen=!menuOpen;
-  document.getElementById('mobilemenu').classList.toggle('open',menuOpen);
-  document.querySelector('.hamburger').textContent=menuOpen?'✕':'☰';
-}
-window.addEventListener('scroll',()=>{
-  document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>50);
-});
-buildNav();
+/* ───────────── nav / progress / menu ───────────── */
+function go(id){document.getElementById(id)?.scrollIntoView({behavior:'smooth'});}
+function menu(){document.getElementById('mmenu').classList.toggle('open');}
+addEventListener('scroll',()=>{
+  document.getElementById('navbar').classList.toggle('scrolled',scrollY>40);
+  const h=document.documentElement;
+  document.getElementById('progress').style.width=(scrollY/(h.scrollHeight-h.clientHeight)*100)+'%';
+},{passive:true});
 
-// SKILLS
-const SKILLS=["Feature Prioritization","Market Research","Customer Interviews","User Discovery","Agile/Scrum","Stakeholder Management","Data Analytics","GCP/BigQuery","Power BI/Tableau/Looker","Jira/Confluence","Figma/Miro","Python","SQL","JavaScript","NetworkX","FastAPI"];
-document.getElementById('skills-tags').innerHTML=SKILLS.map(s=>`<span class="tag">${s}</span>`).join('');
+/* ───────────── reveal on scroll ───────────── */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
 
-// TIMELINE
+/* ───────────── marquee duplicate ───────────── */
+document.getElementById('mtrack').innerHTML+=document.getElementById('mtrack').innerHTML;
+
+/* ───────────── data ───────────── */
+const SKILLS=["Identity Resolution","CDP","Retail Media","Clean Rooms","Privacy / CPRA","GCP · BigQuery","Python · SQL","A/B & Measurement","Agile","Figma","Power BI · Looker","Claude API"];
+document.getElementById('skills').innerHTML=SKILLS.map(s=>`<span class="tag">${s}</span>`).join('');
+
 const TL=[
-  {y:"2019",r:"Product Consultant",c:"KPMG India",l:"Mumbai"},
-  {y:"2022",r:"MEM Student (PM Track)",c:"Duke University",l:"Durham, NC",e:"GPA: 3.9/4.0 · Ex-President, Duke"},
-  {y:"2023",r:"Product Manager",c:"JM Family Enterprises",l:"Florida"},
-  {y:"2024",r:"Product Manager III",c:"Walmart Global Tech",l:"Bentonville, AR"},
+  {y:"2019–22",r:"Product Consultant",c:"KPMG India · Mumbai"},
+  {y:"2022–23",r:"MEM, Product Track · GPA 3.9 · Ex-President",c:"Duke University · Durham"},
+  {y:"2023",r:"Product Manager",c:"JM Family Enterprises · Florida"},
+  {y:"2024–26",r:"Product Manager III",c:"Walmart Global Tech · Bentonville"},
+  {y:"2026—",r:"Senior Product Manager",c:"Walmart Global Tech · Cloud & Data",now:1},
 ];
-document.getElementById('timeline').innerHTML=TL.map((t,i)=>`
-  <div class="timeline-item"><div class="timeline-dot ${i===TL.length-1?'current':''}"></div>
-  <div style="min-width:42px;font-size:13px;color:var(--gold)">${t.y}</div>
-  <div><div style="font-size:14px;color:#ccc">${t.r}</div><div style="font-family:'Inter',sans-serif;font-size:12px;color:var(--dim)">${t.c} · ${t.l}</div>${t.e?`<div style="font-family:'Inter',sans-serif;font-size:11px;color:#555;margin-top:2px">${t.e}</div>`:''}</div></div>`).join('');
+document.getElementById('timeline').innerHTML=TL.map(t=>`
+  <div class="tl-item ${t.now?'now':''}"><div class="tl-y">${t.y}</div>
+  <div class="tl-r">${t.r}</div><div class="tl-c">${t.c}</div></div>`).join('');
 
-// METRICS
-const MET=[{v:"$15M+",l:"Revenue"},{v:"$5.8M",l:"Savings"},{v:"$3.5B",l:"GMV Traced"},{v:"$350M",l:"5-Yr Value"},{v:"35+",l:"Episodes"},{v:"173+",l:"Coached"},{v:"9.4K",l:"LinkedIn"},{v:"4.9★",l:"Topmate"}];
-document.getElementById('metrics-grid').innerHTML=MET.map(m=>`<div class="metric"><div class="metric-val">${m.v}</div><div class="metric-lbl">${m.l}</div></div>`).join('');
+const MET=[["$15M+","Ad Revenue"],["$5.8M","Savings"],["$3.5B","GMV Traced"],["$350M","5-Yr Value"],
+  ["22M+","Records / Yr"],["65M+","Members"],["173+","Coached"],["9.4K","LinkedIn"]];
+document.getElementById('metrics').innerHTML=MET.map(m=>`<div class="metric"><div class="mv">${m[0]}</div><div class="ml">${m[1]}</div></div>`).join('');
 
-// IMPACT CARDS
 const IMP=[
-  {s:"$5.8M",l:"Cost Savings",d:"Negotiated & executed 11 third-party data contracts, optimizing enterprise data acquisition strategy"},
-  {s:"$15M",l:"Ad Revenue",d:"Onboarded auto ownership & behavioral data, architecting 250+ audience personas for non-endemic targeting"},
-  {s:"$3.5B",l:"GMV Traced",d:"Refined suppression logic & expanded addressable audience within customer data platform"},
-  {s:"$350M",l:"5-Year Value",d:"Led vendor selection & onboarding for multiple third-party data sources with competitive market analysis"},
-  {s:"$200M",l:"Working Capital",d:"Improved data quality impacting marketplace seller identity for 7,000+ sellers bi-weekly"},
-  {s:"65M+",l:"Members",d:"Integrated crosswalks into Member Audience Platform enabling advanced segmentation & measurement"},
-  {s:"25.8%",l:"SNAP Captured",d:"Integrated government datasets into analytics for inventory forecasting & customer segmentation"},
-  {s:"$30M",l:"Reporting Value",d:"Sourced open-source Health & Wellness datasets, building scalable data products at zero cost"},
+  ["$15M","Ad Revenue","Onboarded auto-ownership & behavioral data; architected 250+ audience personas for non-endemic targeting on Walmart Connect."],
+  ["$5.8M","Cost Savings","Negotiated & executed 11 third-party data contracts end-to-end, optimizing enterprise data acquisition."],
+  ["$3.5B","GMV Traced","Refined suppression logic & expanded the addressable audience inside the customer data platform — +18% match rates."],
+  ["$350M","5-Year Value","Led vendor selection & onboarding for third-party data sources, aligned to CDP and monetization roadmaps."],
+  ["$200M","Working Capital","Improved seller-identity data quality powering bi-weekly funding for 7,000+ marketplace sellers."],
+  ["25.8%","SNAP Spend Captured","Integrated USDA SNAP/WIC datasets into BigQuery for forecasting, demand planning & segmentation."],
 ];
-document.getElementById('impact-cards').innerHTML=IMP.map(w=>`<div class="card card-gold impact-card"><div class="impact-stat">${w.s}</div><div class="impact-lbl">${w.l}</div><div class="impact-desc">${w.d}</div></div>`).join('');
+document.getElementById('icards').innerHTML=IMP.map(w=>`<div class="icard rv"><div class="iv">${w[0]}</div><div class="il">${w[1]}</div><p>${w[2]}</p></div>`).join('');
 
-// WORK CASE STUDIES
-const WC=[
-  {t:"Third-Party Data Product Suite",c:"Walmart Global Tech",y:"2024–Present",i:"$5.8M savings, $15M+ revenue",d:"Led end-to-end product strategy for third-party data partnerships powering retail media advertising.",tags:["Data Products","AdTech","Identity Resolution","Privacy"]},
-  {t:"Customer Data Platform & Identity Graph",c:"Walmart Global Tech",y:"2024–Present",i:"$3.5B GMV, 18% match lift",d:"Refined suppression logic and pre-matching to expand addressable audience. Created 400K net new IDs.",tags:["Identity Graph","Data Matching","Audience Platform"]},
-  {t:"Analytics Platform MVP (GCP/BigQuery)",c:"Walmart Global Tech",y:"2024",i:"40% faster queries",d:"Designed and launched analytics platform MVP integrating third-party datasets for multiple business units.",tags:["GCP","BigQuery","Analytics"]},
-  {t:"AI-Enhanced Product Launch",c:"JM Family Enterprises",y:"2023",i:"15% sales increase",d:"Launched AI-enhanced product leveraging GenAI for market analysis. Integrated Power BI for advanced analytics.",tags:["AI/ML","Product Launch","Power BI"]},
-  {t:"IT Asset Management Platform",c:"KPMG India",y:"2019–2022",i:"20% efficiency gain",d:"Led development of platform for monitoring active directories, servers, and endpoints. 25% client engagement increase.",tags:["Consulting","SAM","Platform Product"]},
-];
-document.getElementById('work-cases').innerHTML=WC.map(w=>`<div class="card work-card"><div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px;margin-bottom:4px"><div><div style="font-size:14px;color:#ddd">${w.t}</div><div style="font-family:'Inter',sans-serif;font-size:11px;color:var(--dim)">${w.c} · ${w.y}</div></div><div style="font-family:'Inter',sans-serif;font-size:12px;color:var(--gold);white-space:nowrap">${w.i}</div></div><p style="font-size:13px;color:#888;line-height:1.6;margin:4px 0 0">${w.d}</p><div>${w.tags.map(t=>`<span class="tag">${t}</span>`).join('')}</div></div>`).join('');
-
-// ACCOMPLISHMENTS
-const ACC=["Increased GMV traceability by 10%, enabling $3.5B in GMV tracking and generating $4M incremental ad revenue by optimizing data flows for compliance and marketing","Ensured 100% compliance with new privacy legislation by coordinating rapid opt-out solutions in response to evolving state laws","Purged 100% of non-compliant records, reducing CPRA risk by deploying automated purge logic for inbound data in production tables","Increased data volume by 22M records/year and improved household visibility, supporting $200M in working capital funding","Designed and launched analytics platform MVP, integrating third-party datasets to enable advanced analytics for multiple business units","Supported $15M in projected annual advertising revenue by building and validating crosswalk pipelines for retail media","Drove $15M annual revenue impact by integrating 250+ auto persona profiles for advanced targeting","Achieved 100% compliance by updating ingestion pipelines to remove sensitive fields","Led migration and retirement of outdated data systems for improved data management","Supported advanced segmentation for 65M+ members by orchestrating secure, compliant crosswalk pipelines","Unlocked multi-million dollar advertising partnerships by designing cross-platform data crosswalk pipelines","Reduced manual intervention by 90% and improved data delivery SLAs by automating secure file transfers","Increased match rates by 18%, yielding 1.6M additional matches and $4M incremental ad revenue","Improved suppression accuracy by automating orphan detection and suppression updates","Reduced query times by 40% through partition alignment and data migration","Automated census touch file creation pipelines, reducing manual effort by 90%","Matched 1.6M additional records, created 400K net new IDs, generating $4M incremental ad revenue","Captured 25.8% of national SNAP grocery spend by integrating government datasets","Automated ingestion of 32M+ commercial business contact records for B2B identity resolution","Boosted project delivery timelines by 12% and team efficiency by 9% through workflow automation","Enabled $30M annual reporting value at zero incremental cost via open-source Health & Wellness datasets","Improved ROAS and drove $10M+ incremental revenue through enhanced segmentation","Integrated crosswalks for media and analytics partners enabling advanced retail media segmentation"];
-let showAllAcc=false;
-function renderAcc(){
-  const vis=showAllAcc?ACC:ACC.slice(0,6);
-  document.getElementById('accomplishments').innerHTML=vis.map(a=>`<div class="acc">→ ${a}</div>`).join('');
-  document.querySelector('#impact .toggler').textContent=showAllAcc?'Show fewer':`Show all ${ACC.length} accomplishments`;
-}
-function toggleAccomplishments(){showAllAcc=!showAllAcc;renderAcc();}
+const ACC=["Increased GMV traceability by 10%, enabling $3.5B in GMV tracking and $4M incremental ad revenue","Ensured 100% compliance with new privacy legislation via rapid opt-out solutions","Purged 100% of non-compliant records, reducing CPRA risk with automated purge logic","Added 22M records/year improving household visibility, supporting $200M in working capital funding","Designed and launched analytics platform MVP integrating third-party datasets","Supported $15M projected annual ad revenue via crosswalk pipelines for retail media","Drove $15M annual revenue impact integrating 250+ auto persona profiles","Achieved 100% compliance by stripping sensitive fields from ingestion pipelines","Led migration and retirement of outdated data systems","Enabled advanced segmentation for 65M+ members via secure crosswalk pipelines","Unlocked multi-million dollar ad partnerships with cross-platform crosswalks","Cut manual intervention 90% and improved SLAs by automating secure file transfers","Lifted match rates 18% — 1.6M additional matches, $4M incremental ad revenue","Improved suppression accuracy with automated orphan detection","Reduced query times 40% through partition alignment and migration","Automated census touch-file pipelines, reducing manual effort 90%","Created 400K net-new IDs from 1.6M newly matched records","Captured 25.8% of national SNAP grocery spend via government datasets","Automated ingestion of 32M+ B2B contact records for business identity resolution","Boosted delivery timelines 12% and team efficiency 9% via workflow automation","Enabled $30M annual reporting value at zero cost via open Health & Wellness datasets","Improved ROAS driving $10M+ incremental revenue through enhanced segmentation","Integrated crosswalks for media & analytics partners enabling retail-media segmentation"];
+let allAcc=false;
+function renderAcc(){document.getElementById('accs').innerHTML=(allAcc?ACC:ACC.slice(0,6)).map(a=>`<div class="acc">${a}</div>`).join('');
+  document.getElementById('accbtn').textContent=allAcc?'Show fewer':`Show all ${ACC.length} accomplishments`;}
+function toggleAcc(){allAcc=!allAcc;renderAcc();}
 renderAcc();
 
-// DUKE CASES
-const DC=[
-  {t:"Netflix — Pricing & Streaming Strategy",c:"Netflix",d:"Analyzed DVD-to-streaming transition and customer retention using 5Cs/SWOT.",pdf:"https://d1239447-37e7-4b8e-8904-0bcf056c039e.filesusr.com/ugd/c94ca8_8c85ff9b346847dca1af1b6f02c631ef.pdf"},
-  {t:"Mountain Man Brewing — Diversification",c:"MMBC",d:"Evaluated product line expansion analyzing market trends and growth rates.",pdf:"https://d1239447-37e7-4b8e-8904-0bcf056c039e.filesusr.com/ugd/c94ca8_f57c147cd28b468c9d3c7e79bc3618d3.pdf"},
-  {t:"Rent the Runway — Equity & Expansion",c:"RTR",d:"Assessed VC funding strategy and market validation at Harvard/Yale.",pdf:"https://d1239447-37e7-4b8e-8904-0bcf056c039e.filesusr.com/ugd/c94ca8_45053ff7ae2642e1841a955aa3fce240.pdf"},
-  {t:"Olympic Rent-A-Car — Customer Loyalty",c:"Olympic",d:"Developed customer acquisition strategy for Medalist program.",pdf:"https://d1239447-37e7-4b8e-8904-0bcf056c039e.filesusr.com/ugd/c94ca8_bfe8b886bd384af89b172327c146d98a.pdf"},
-  {t:"Best Buy vs Amazon — Competitive Strategy",c:"Best Buy",d:"Built investment thesis analyzing omnichannel differentiation.",pdf:"https://d1239447-37e7-4b8e-8904-0bcf056c039e.filesusr.com/ugd/c94ca8_830381e51fc74f9e83fe125821377445.pdf"},
-  {t:"Snapchat — Product & Market Analysis",c:"Snapchat",d:"Product teardown and advertising model positioning analysis.",pdf:"cases/snapchat.pdf"},
-  {t:"Tesla — Creating Shared Value",c:"Tesla",d:"CSV framework evaluating sustainability and business model innovation.",pdf:"cases/tesla.pdf"},
-  {t:"EY — Project Everest Strategy",c:"EY",d:"Competitive strategy analysis of EY's organizational split and partner dynamics.",pdf:"cases/ey.pdf"},
-  {t:"ESG Compliance at RTF",c:"RTF",d:"Innovative approaches to enhance ESG compliance using data-driven frameworks.",pdf:"cases/esg-rtf.pdf"},
-  {t:"WordsEye — Product Strategy",c:"WordsEye",d:"Strategy for AI-powered text-to-scene platform evaluating market fit.",pdf:"cases/wordseye.pdf"},
+const PROJ=[
+  ["Identity Resolution Engine","Deterministic + probabilistic matching, identity graphs, CCPA/GDPR constraints. 108 tests, CI on Python 3.10–3.12.","https://github.com/Shubham-Safaya/identity-resolution-engine","PYTHON · NETWORKX"],
+  ["Pre-Market Stock Brief","Portfolio-aware screener: pre-market gaps, futures, RSI/SMA signals, congressional trades. Emails before the bell, daily.","https://github.com/Shubham-Safaya/stock-screener","PYTHON · AUTOMATION"],
+  ["Curated Job Pipeline","Scrapes boards + company sites, scores by domain fit, auto-applies to the top few, sends an evening shortlist brief.","https://shubham-safaya.github.io/job-search-dashboard/","PYTHON · ACTIONS"],
+  ["Data Quality Monitor","Zero-dependency Python data validation. Define checks in pure Python, get pass/fail reports. 52 tests.","https://github.com/Shubham-Safaya/data-quality-monitor","PYTHON · OSS"],
+  ["Accessible Alarm Clock","Multi-sensory alarm PWA for users with visual/hearing impairments. Speech, haptics, screen-flash. WCAG 2.1 AA.","https://github.com/Shubham-Safaya/accessibility-alarm","JS · PWA · A11Y"],
+  ["Productivity Toolkit","7 Claude-API CLI tools: LinkedIn batches, outreach, mock interviews, EB1A tracker, Medium drafts.","https://github.com/Shubham-Safaya/productivity-toolkit","PYTHON · CLAUDE API"],
 ];
-let showAllDC=false;
-function renderDC(){
-  const vis=showAllDC?DC:DC.slice(0,4);
-  document.getElementById('duke-cases').innerHTML=vis.map(c=>`<a href="${c.pdf}" target="_blank" rel="noopener noreferrer" style="text-decoration:none"><div class="card card-gold" style="cursor:pointer"><div style="font-family:'Inter',sans-serif;font-size:10px;letter-spacing:1px;color:var(--gold);margin-bottom:3px;text-transform:uppercase">${c.c} <span style="color:#555">· PDF ↗</span></div><div style="font-size:13px;color:#ccc;margin-bottom:4px">${c.t}</div><div style="font-family:'Inter',sans-serif;font-size:11px;color:#777;line-height:1.6">${c.d}</div></div></a>`).join('');
-  document.querySelector('#cases .toggler').textContent=showAllDC?'Show fewer':`Show all ${DC.length} cases`;
-}
-function toggleDukeCases(){showAllDC=!showAllDC;renderDC();}
+document.getElementById('projects').innerHTML=PROJ.map(p=>`<a class="pcard rv" href="${p[2]}" target="_blank" rel="noopener"><div class="pk">${p[3]}</div><h3>${p[0]}</h3><p>${p[1]}</p></a>`).join('');
+
+const DC=[
+  ["Netflix — Pricing & Streaming Strategy","DVD-to-streaming transition & retention via 5Cs/SWOT.","https://d1239447-37e7-4b8e-8904-0bcf056c039e.filesusr.com/ugd/c94ca8_8c85ff9b346847dca1af1b6f02c631ef.pdf"],
+  ["Best Buy vs Amazon — Competitive Strategy","Investment thesis on omnichannel differentiation.","https://d1239447-37e7-4b8e-8904-0bcf056c039e.filesusr.com/ugd/c94ca8_830381e51fc74f9e83fe125821377445.pdf"],
+  ["Snapchat — Product & Market Analysis","Product teardown and ads-model positioning.","cases/snapchat.pdf"],
+  ["Tesla — Creating Shared Value","CSV framework on sustainability & business model innovation.","cases/tesla.pdf"],
+  ["Mountain Man Brewing — Diversification","Product-line expansion vs market trends.","https://d1239447-37e7-4b8e-8904-0bcf056c039e.filesusr.com/ugd/c94ca8_f57c147cd28b468c9d3c7e79bc3618d3.pdf"],
+  ["Rent the Runway — Equity & Expansion","VC funding strategy and market validation.","https://d1239447-37e7-4b8e-8904-0bcf056c039e.filesusr.com/ugd/c94ca8_45053ff7ae2642e1841a955aa3fce240.pdf"],
+  ["Olympic Rent-A-Car — Customer Loyalty","Acquisition strategy for the Medalist program.","https://d1239447-37e7-4b8e-8904-0bcf056c039e.filesusr.com/ugd/c94ca8_bfe8b886bd384af89b172327c146d98a.pdf"],
+  ["EY — Project Everest Strategy","EY's organizational split and partner dynamics.","cases/ey.pdf"],
+  ["ESG Compliance at RTF","Data-driven frameworks for ESG compliance.","cases/esg-rtf.pdf"],
+  ["WordsEye — Product Strategy","Market fit for an AI text-to-scene platform.","cases/wordseye.pdf"],
+];
+let allDC=false;
+function renderDC(){document.getElementById('cases').innerHTML=(allDC?DC:DC.slice(0,4)).map(c=>`<a class="pcard rv in" href="${c[2]}" target="_blank" rel="noopener"><div class="pk">DUKE MEM · PDF</div><h3>${c[0]}</h3><p>${c[1]}</p></a>`).join('');
+  document.getElementById('dcbtn').textContent=allDC?'Show fewer':`Show all ${DC.length} Duke cases`;}
+function toggleDC(){allDC=!allDC;renderDC();}
 renderDC();
 
-// PROJECTS
-const PROJ=[
-  {t:"Identity Resolution Engine",d:"Open-source deterministic + probabilistic identity matching with graph clustering. 108 tests, CI across Python 3.10-3.12.",tags:["Python","NetworkX","Identity"],url:"https://github.com/Shubham-Safaya/identity-resolution-engine"},
-  {t:"Data Quality Monitor",d:"Zero-dependency data validation library. Define checks in pure Python, get pass/fail reports. 52 tests.",tags:["Python","Data Quality"],url:"https://github.com/Shubham-Safaya/data-quality-monitor"},
-  {t:"Stock Screener + Congressional Tracker",d:"Daily automated stock screener with RSI, SMA crossovers, and congressional trading data. Runs via GitHub Actions.",tags:["Python","Finance","Automation"],url:"https://github.com/Shubham-Safaya/stock-screener"},
-  {t:"Job Search Dashboard",d:"Live analytics dashboard tracking automated job search. US heatmap, company tiers, source analysis.",tags:["Chart.js","Leaflet.js","GitHub Pages"],url:"https://shubham-safaya.github.io/job-search-dashboard/"},
-  {t:"Accessible Alarm Clock",d:"Multi-sensory alarm PWA for users with visual or hearing impairments. Web Speech API, haptics, visual alerts.",tags:["JavaScript","PWA","Accessibility"],url:"https://github.com/Shubham-Safaya/accessibility-alarm"},
-  {t:"Productivity Toolkit",d:"7 Claude API-powered CLI tools for career development: resume tailoring, interview prep, content generation.",tags:["Python","Anthropic SDK","CLI"],url:"https://github.com/Shubham-Safaya/productivity-toolkit"},
-];
-document.getElementById('projects-grid').innerHTML=PROJ.map(p=>`<a href="${p.url}" target="_blank" rel="noopener noreferrer" style="text-decoration:none"><div class="card card-gold" style="cursor:pointer"><div style="font-size:14px;color:#ccc;margin-bottom:4px">${p.t} <span style="font-family:'Inter',sans-serif;font-size:10px;color:#555">↗</span></div><div style="font-family:'Inter',sans-serif;font-size:11px;color:#777;line-height:1.6;margin-bottom:6px">${p.d}</div><div>${p.tags.map(t=>`<span class="tag">${t}</span>`).join('')}</div></div></a>`).join('');
-
-// CERTS
 const CERTS=[
-  {n:"Certified Scrum Product Owner (CSPO)",o:"Scrum Alliance",p:"https://d1239447-37e7-4b8e-8904-0bcf056c039e.filesusr.com/ugd/c94ca8_14d25268ec7f4eda83c5547067b2edf2.pdf"},
-  {n:"Lean Six Sigma Green Belt (LSSGB)",o:"IMC Institute",p:"https://d1239447-37e7-4b8e-8904-0bcf056c039e.filesusr.com/ugd/c94ca8_a1c33a3cb523499bb136f31e048cbbae.pdf"},
-  {n:"Enterprise Design Thinking Practitioner",o:"IBM",p:"https://d1239447-37e7-4b8e-8904-0bcf056c039e.filesusr.com/ugd/c94ca8_f66bd2f97d9c442da95ddfe5e2f9477a.pdf"},
-  {n:"ISO 27001 Lead Auditor",o:"TUV SUD",p:"https://d1239447-37e7-4b8e-8904-0bcf056c039e.filesusr.com/ugd/c94ca8_783dcbbc478f4884a557997774916dcd.pdf"},
-  {n:"AWS Cloud Practitioner Essentials",o:"AWS",p:"https://d1239447-37e7-4b8e-8904-0bcf056c039e.filesusr.com/ugd/c94ca8_1923e06ea8944a3881458555752ae5da.pdf"},
-  {n:"FlexNet Manager Implementation",o:"Flexera",p:"https://d1239447-37e7-4b8e-8904-0bcf056c039e.filesusr.com/ugd/c94ca8_4606036e59ff41398ff0720e1e0344bc.pdf"},
-  {n:"Power BI A-Z Training",o:"Udemy",p:"https://d1239447-37e7-4b8e-8904-0bcf056c039e.filesusr.com/ugd/c94ca8_e468caa854a74d9ba76e17819643d28b.pdf"},
-  {n:"The Data Science Bootcamp",o:"Udemy",p:"https://d1239447-37e7-4b8e-8904-0bcf056c039e.filesusr.com/ugd/c94ca8_7b6d9daf1de24fb4b1a7575d906e1c9b.pdf"},
-  {n:"Predicting Salaries with Linear Regression in R",o:"Coursera",p:"https://d1239447-37e7-4b8e-8904-0bcf056c039e.filesusr.com/ugd/c94ca8_24825738151c477e970727de3399e64f.pdf"},
+  ["Certified Scrum Product Owner (CSPO)","Scrum Alliance","https://d1239447-37e7-4b8e-8904-0bcf056c039e.filesusr.com/ugd/c94ca8_14d25268ec7f4eda83c5547067b2edf2.pdf"],
+  ["Lean Six Sigma Green Belt","IMC Institute","https://d1239447-37e7-4b8e-8904-0bcf056c039e.filesusr.com/ugd/c94ca8_a1c33a3cb523499bb136f31e048cbbae.pdf"],
+  ["Enterprise Design Thinking Practitioner","IBM","https://d1239447-37e7-4b8e-8904-0bcf056c039e.filesusr.com/ugd/c94ca8_f66bd2f97d9c442da95ddfe5e2f9477a.pdf"],
+  ["ISO 27001 Lead Auditor","TÜV SÜD","https://d1239447-37e7-4b8e-8904-0bcf056c039e.filesusr.com/ugd/c94ca8_783dcbbc478f4884a557997774916dcd.pdf"],
+  ["AWS Cloud Practitioner Essentials","AWS","https://d1239447-37e7-4b8e-8904-0bcf056c039e.filesusr.com/ugd/c94ca8_1923e06ea8944a3881458555752ae5da.pdf"],
+  ["FlexNet Manager Implementation","Flexera","https://d1239447-37e7-4b8e-8904-0bcf056c039e.filesusr.com/ugd/c94ca8_4606036e59ff41398ff0720e1e0344bc.pdf"],
+  ["Power BI A-Z Training","Udemy","https://d1239447-37e7-4b8e-8904-0bcf056c039e.filesusr.com/ugd/c94ca8_e468caa854a74d9ba76e17819643d28b.pdf"],
+  ["The Data Science Bootcamp","Udemy","https://d1239447-37e7-4b8e-8904-0bcf056c039e.filesusr.com/ugd/c94ca8_7b6d9daf1de24fb4b1a7575d906e1c9b.pdf"],
+  ["Linear Regression in R","Coursera","https://d1239447-37e7-4b8e-8904-0bcf056c039e.filesusr.com/ugd/c94ca8_24825738151c477e970727de3399e64f.pdf"],
 ];
-document.getElementById('certs-list').innerHTML=CERTS.map(c=>`<a href="${c.p}" target="_blank" rel="noopener noreferrer" style="text-decoration:none"><div class="cert-row" style="cursor:pointer"><div style="font-size:13px;color:#ccc">${c.n} <span style="font-family:'Inter',sans-serif;font-size:10px;color:#555">↗</span></div><div style="font-family:'Inter',sans-serif;font-size:10px;color:var(--dim);white-space:nowrap;letter-spacing:1px">${c.o}</div></div></a>`).join('');
+document.getElementById('certs').innerHTML=CERTS.map(c=>`<a class="row" href="${c[2]}" target="_blank" rel="noopener"><span class="rt">${c[0]}</span><span class="rs">${c[1]} ↗</span></a>`).join('');
 
-// WRITING
 const WR=[
-  {t:"Customer Data Identity × Advertising × Privacy — 15-day series",p:"LinkedIn",s:"prog"},
-  {t:"How I Automated My Entire Job Search with Python and GitHub Actions",p:"Blog",s:"pub"},
-  {t:"I Built an Open-Source Identity Resolution Engine",p:"Blog",s:"pub"},
-  {t:"Why I Built a Data Quality Tool With Zero Dependencies",p:"Blog",s:"pub"},
-  {t:"I Built a Live Dashboard to Track My Automated Job Search",p:"Blog",s:"pub"},
-  {t:"I Built a Daily Stock Screener That Tracks What Congress Is Buying",p:"Blog",s:"pub"},
+  ["Customer Data Identity × Advertising × Privacy — 15-day series","LinkedIn","prog"],
+  ["How I Automated My Entire Job Search with Python & GitHub Actions","Blog","pub"],
+  ["I Built an Open-Source Identity Resolution Engine","Blog","pub"],
+  ["Why I Built a Data Quality Tool With Zero Dependencies","Blog","pub"],
+  ["I Built a Live Dashboard to Track My Automated Job Search","Blog","pub"],
+  ["I Built a Daily Stock Screener That Tracks What Congress Is Buying","Blog","pub"],
 ];
-document.getElementById('writing-list').innerHTML=WR.map(w=>`<div class="writing-row"><div><div style="font-size:13px;color:#ccc">${w.t}</div><div style="font-family:'Inter',sans-serif;font-size:11px;color:var(--dim)">${w.p}</div></div><span class="status status-${w.s}">${w.s==='pub'?'Published':w.s==='prog'?'In Progress':'Planned'}</span></div>`).join('');
+document.getElementById('wlist').innerHTML=WR.map(w=>`<div class="row"><span class="rt">${w[0]}</span><span class="pill ${w[2]}">${w[2]==='pub'?'Published':'In progress'}</span></div>`).join('');
+
+document.getElementById('yr').textContent=new Date().getFullYear();
 </script>
 </body>
 </html>
