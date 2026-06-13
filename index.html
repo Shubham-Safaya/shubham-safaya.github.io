@@ -330,10 +330,12 @@ footer .f2{font-family:var(--mono);font-size:10px;color:#333;letter-spacing:.1em
       <div><div class="at">Identity Resolution Engine</div><div class="ad">OPEN SOURCE · PYTHON · 108 TESTS</div></div><span class="arrow">↗</span></a>
     <a class="artifact" href="https://www.linkedin.com/in/shubham-safaya/" target="_blank" rel="noopener">
       <div><div class="at">Customer Data Identity × Advertising × Privacy — 15-day series</div><div class="ad">LINKEDIN · RUNNING NOW</div></div><span class="arrow">↗</span></a>
-    <a class="artifact" href="https://github.com/Shubham-Safaya/daily-engineering-log" target="_blank" rel="noopener">
-      <div><div class="at">Daily Engineering Log</div><div class="ad">IDENTITY · ADTECH · PRIVACY — AUTOMATED DAILY</div></div><span class="arrow">↗</span></a>
-    <a class="artifact" href="https://shubhamsafaya.wordpress.com" target="_blank" rel="noopener">
-      <div><div class="at">Essays: clean rooms, match rates, crosswalks</div><div class="ad">BLOG · LONG-FORM</div></div><span class="arrow">↗</span></a>
+    <a class="artifact" href="https://shubham-safaya.github.io/us-consumer-pulse/" target="_blank" rel="noopener">
+      <div><div class="at">US Consumer Pulse dashboard</div><div class="ad">LIVE · DAILY REFRESH · PUBLIC-DOMAIN GOV DATA</div></div><span class="arrow">↗</span></a>
+    <a class="artifact" href="https://github.com/Shubham-Safaya/daily-engineering-log/blob/main/book/BOOK.md" target="_blank" rel="noopener">
+      <div><div class="at">The Identity Layer — a book assembling in public</div><div class="ad">WEEKLY ESSAY · ALSO ON MEDIUM</div></div><span class="arrow">↗</span></a>
+    <a class="artifact" href="https://medium.com/@safayashubham" target="_blank" rel="noopener">
+      <div><div class="at">Essays: clean rooms, match rates, crosswalks</div><div class="ad">MEDIUM · LONG-FORM, WEEKLY</div></div><span class="arrow">↗</span></a>
   </div>
 </section>
 
@@ -386,7 +388,7 @@ footer .f2{font-family:var(--mono);font-size:10px;color:#333;letter-spacing:.1em
   <div class="grid2" id="projects"></div>
   <div style="margin-top:26px;display:flex;gap:12px;flex-wrap:wrap" class="rv">
     <a href="https://github.com/Shubham-Safaya" target="_blank" rel="noopener" class="btn">GitHub profile</a>
-    <a href="https://shubhamsafaya.wordpress.com" target="_blank" rel="noopener" class="btn ghost">The blog</a>
+    <a href="https://medium.com/@safayashubham" target="_blank" rel="noopener" class="btn ghost">Read on Medium</a>
   </div>
 </section>
 
@@ -569,10 +571,10 @@ renderAcc();
 
 const PROJ=[
   ["Identity Resolution Engine","Deterministic + probabilistic matching, identity graphs, CCPA/GDPR constraints. 108 tests, CI on Python 3.10–3.12.","https://github.com/Shubham-Safaya/identity-resolution-engine","PYTHON · NETWORKX"],
-  ["Pre-Market Stock Brief","Portfolio-aware screener: pre-market gaps, futures, RSI/SMA signals, congressional trades. Emails before the bell, daily.","https://github.com/Shubham-Safaya/stock-screener","PYTHON · AUTOMATION"],
+  ["US Consumer Pulse","Daily-refreshing dashboard of the American shopper: inflation, real wages, jobs, retail employment, state incomes. Free public-domain government data, zero backend.","https://shubham-safaya.github.io/us-consumer-pulse/","LIVE · BLS + CENSUS"],
+  ["Pre-Market Stock Brief","Portfolio-aware screener: pre-market gaps, futures, RSI/SMA signals, market-emotion gauge, congressional trades. Emails before the bell, daily.","https://github.com/Shubham-Safaya/stock-screener","PYTHON · AUTOMATION"],
   ["Curated Job Pipeline","Scrapes boards + company sites, scores by domain fit, auto-applies to the top few, sends an evening shortlist brief.","https://shubham-safaya.github.io/job-search-dashboard/","PYTHON · ACTIONS"],
   ["Data Quality Monitor","Zero-dependency Python data validation. Define checks in pure Python, get pass/fail reports. 52 tests.","https://github.com/Shubham-Safaya/data-quality-monitor","PYTHON · OSS"],
-  ["Accessible Alarm Clock","Multi-sensory alarm PWA for users with visual/hearing impairments. Speech, haptics, screen-flash. WCAG 2.1 AA.","https://github.com/Shubham-Safaya/accessibility-alarm","JS · PWA · A11Y"],
   ["Productivity Toolkit","7 Claude-API CLI tools: LinkedIn batches, outreach, mock interviews, EB1A tracker, Medium drafts.","https://github.com/Shubham-Safaya/productivity-toolkit","PYTHON · CLAUDE API"],
 ];
 document.getElementById('projects').innerHTML=PROJ.map(p=>`<a class="pcard rv" href="${p[2]}" target="_blank" rel="noopener"><div class="pk">${p[3]}</div><h3>${p[0]}</h3><p>${p[1]}</p></a>`).join('');
@@ -609,12 +611,13 @@ const CERTS=[
 document.getElementById('certs').innerHTML=CERTS.map(c=>`<a class="row" href="${c[2]}" target="_blank" rel="noopener"><span class="rt">${c[0]}</span><span class="rs">${c[1]} ↗</span></a>`).join('');
 
 const WR=[
+  ["The Identity Layer — a book assembling in public, one weekly essay","Medium","prog"],
   ["Customer Data Identity × Advertising × Privacy — 15-day series","LinkedIn","prog"],
-  ["How I Automated My Entire Job Search with Python & GitHub Actions","Blog","pub"],
-  ["I Built an Open-Source Identity Resolution Engine","Blog","pub"],
-  ["Why I Built a Data Quality Tool With Zero Dependencies","Blog","pub"],
-  ["I Built a Live Dashboard to Track My Automated Job Search","Blog","pub"],
-  ["I Built a Daily Stock Screener That Tracks What Congress Is Buying","Blog","pub"],
+  ["Who Is the Customer, Really? (Chapter 1)","Medium","pub"],
+  ["Match Rates Lie","Medium","pub"],
+  ["Clean Rooms Solve Less Than You Think","Medium","pub"],
+  ["How I Automated My Entire Job Search with Python & GitHub Actions","Medium","pub"],
+  ["I Built a Daily Stock Screener That Tracks What Congress Is Buying","Medium","pub"],
 ];
 document.getElementById('wlist').innerHTML=WR.map(w=>`<div class="row"><span class="rt">${w[0]}</span><span class="pill ${w[2]}">${w[2]==='pub'?'Published':'In progress'}</span></div>`).join('');
 
