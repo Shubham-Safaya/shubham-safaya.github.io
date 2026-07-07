@@ -1,0 +1,24 @@
+name: Refresh stats
+on:
+  schedule:
+    - cron: "0 10 * * *"   # backbone slot: portfolio stats
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: python scripts/refresh.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+      - run: |
+          git config user.name "stats-bot"
+          git config user.email "actions@github.com"
+          git add data/
+          git diff --cached --quiet || git commit -m "data: stats snapshot $(date -u +%F) [skip ci]"
+          git push

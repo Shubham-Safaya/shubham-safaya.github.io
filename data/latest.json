@@ -1,0 +1,42 @@
+{
+  "fetched_at": "2026-07-07T19:44:40.270138Z",
+  "stats": {
+    "public_repos": 19,
+    "commits_90d": 114,
+    "medium_articles": 1,
+    "youtube_videos": 15
+  },
+  "medium": [
+    {
+      "title": "Why Most Retail Media Identity Problems Start as Schema Problems \u2013 And What to Do About It",
+      "link": "https://medium.com/@safayashubham/why-most-retail-media-identity-problems-start-as-schema-problems-and-what-to-do-about-it-e1d90f5abad5",
+      "date": "Wed, 25 Mar 2026 01:36:52 GMT"
+    }
+  ],
+  "youtube": [
+    {
+      "id": "zSPIhdyq3Js",
+      "title": "Hidden Voice Unfiltered - 02 - Yeh Jo Halka Halka Saroor -By- Sandeep Koul Sunny - Jammu and Kashmir"
+    },
+    {
+      "id": "lY98anxUZOc",
+      "title": "Hidden Voice Unfiltered - 01 - Lambi Judaai - By - Sandeep Koul Sunny - Jammu and Kashmir"
+    },
+    {
+      "id": "SfUiRyMsdMk",
+      "title": "Sasta Desi Vlogger | Solo Ride Bangalore to Mumbai| 1000Km-18Hrs | Thar RWD EverestWhite | Vlog 02"
+    },
+    {
+      "id": "rXLMycIazzE",
+      "title": "Sasta Desi Vlogger | Solo Ride Mumbai to Bangalore | 1000Km-18Hrs | Thar RWD Everest White | Vlog 01"
+    },
+    {
+      "id": "y8Ehl0GjGeU",
+      "title": "Waghjai to Thanale Caves Trek | Mumbai Monsoon Diaries |"
+    },
+    {
+      "id": "fi99wyxqxIw",
+      "title": "Bhoot Hota Hai ? | Random Recordings 01 | Ft. Rajender Bhai | Mumbai | Unfiltered"
+    }
+  ]
+}

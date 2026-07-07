@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://shubham-safaya.github.io/sitemap.xml
