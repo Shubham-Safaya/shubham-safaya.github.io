@@ -616,12 +616,15 @@ function toggleAcc(){allAcc=!allAcc;renderAcc();}
 renderAcc();
 
 const PROJ=[
-  ["Identity Resolution Engine","Deterministic + probabilistic matching, identity graphs, CCPA/GDPR constraints. 108 tests, CI on Python 3.10–3.12.","https://github.com/Shubham-Safaya/identity-resolution-engine","PYTHON · NETWORKX"],
-  ["US Consumer Pulse","Daily-refreshing dashboard of the American shopper: inflation, real wages, jobs, retail employment, state incomes. Free public-domain government data, zero backend.","https://shubham-safaya.github.io/us-consumer-pulse/","LIVE · BLS + CENSUS"],
-  ["Pre-Market Stock Brief","Portfolio-aware screener: pre-market gaps, futures, RSI/SMA signals, market-emotion gauge, congressional trades. Emails before the bell, daily.","https://github.com/Shubham-Safaya/stock-screener","PYTHON · AUTOMATION"],
-  ["Mission Control","A next-step advisor: a static roadmap across every goal plus a Claude coach that runs on your own API key, fully client-side. No backend.","https://shubham-safaya.github.io/mission-control/","LIVE · CLAUDE API"],
-  ["Curated Job Pipeline","Scrapes boards + company sites, scores by domain fit, auto-applies to the top few, sends an evening shortlist brief.","https://shubham-safaya.github.io/job-search-dashboard/","PYTHON · ACTIONS"],
-  ["YouTube to Shorts Studio","Drop in a video link, get a Shorts/Reels plan: best moments, hooks, captions, hashtags + optional 9:16 clips. Runs in GitHub Actions.","https://github.com/Shubham-Safaya/yt-shorts-studio","YT-DLP · FFMPEG"],
+  ["Identity Resolution Engine","Open-source deterministic + probabilistic matching, identity graphs, CCPA/GDPR constraints. Powers the public methodology demos below. 108 tests, CI on Python 3.10–3.12.","https://github.com/Shubham-Safaya/identity-resolution-engine","PYTHON · NETWORKX"],
+  ["US Consumer Pulse","Audience intelligence on public data: a Census persona builder, a 100K synthetic identity graph resolved by my own engine, a competitor landscape, and a daily FRED macro pulse.","https://shubham-safaya.github.io/us-consumer-pulse/","LIVE · CENSUS + FRED"],
+  ["Bharat Consumer Pulse","The India twin: persona builder on Census 2011, NCP projections and NFHS-5; a mobile-first synthetic identity graph keyed on phone-hash; a DPDP-Act consent explainer.","https://shubham-safaya.github.io/bharat-consumer-pulse/","LIVE · INDIA DATA"],
+  ["Checkpoint","A brutally honest pathway navigator for Indians going abroad: exam forks, immigration checkpoints, 20 verified travel records, an EB1A tracker. No AI, no accounts, no trackers.","https://shubham-safaya.github.io/checkpoint/","REACT · RULES ENGINE"],
+  ["Mission Control","A next-step advisor: a roadmap across every goal plus a Claude coach that runs on your own API key, fully client-side. No backend.","https://shubham-safaya.github.io/mission-control/","LIVE · CLAUDE API"],
+  ["Curated Job Pipeline","Scrapes boards + company sites, scores by domain fit, auto-applies to the top few, sends an evening shortlist brief. Public analytics dashboard.","https://shubham-safaya.github.io/job-search-dashboard/","PYTHON · ACTIONS"],
+  ["EvenOut","Free, no-ads, installable expense-splitting app used by a real friend group: shareable groups, equal/percent/exact splits, charts, settle-up.","https://shubham-safaya.github.io/evenout/","PWA · SUPABASE"],
+  ["KesarKong","A heritage house of Kashmir & Jammu: GI-tagged Pampore saffron, a Jammu line, GI crafts, and the Herath Box for the diaspora. Batch-level provenance. Pre-launch.","https://shubham-safaya.github.io/kesarkong/","VENTURE · PROVENANCE"],
+  ["YouTube to Shorts Studio","Turn one long interview into ready-to-post 9:16 Shorts + Reels: whisper transcription, highlight scoring, ffmpeg crop, burned captions. Web builder + local pipeline.","https://shubham-safaya.github.io/yt-shorts-studio/","YT-DLP · FFMPEG"],
 ];
 document.getElementById('projects').innerHTML=PROJ.map(p=>`<a class="pcard rv" href="${p[2]}" target="_blank" rel="noopener"><div class="pk">${p[3]}</div><h3>${p[0]}</h3><p>${p[1]}</p></a>`).join('');
 
